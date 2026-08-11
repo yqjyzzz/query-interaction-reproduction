@@ -1,0 +1,28 @@
+{
+  "schema_version": "fq.iclr.h4.d_full_integrity_audit.v1",
+  "status": "PASS_H4_D_FULL_INTEGRITY_NO_AGGREGATE",
+  "full_gt_manifest_sha256": "4f9e761d0b8f5fea51777814637b05b10033555af4023f4a5908b3a4b0eb4eaf",
+  "models": {
+    "detr_r50_500": {
+      "receipt_count": 710,
+      "receipt_manifest_sha256": "bdbc1ad02a78e48b4c83512ab5c66166f4c2412f9a0c17d7245a1b2758b704bf",
+      "total_bytes": 28643619,
+      "maximum_identity_or_repeat_noise": 0.0
+    },
+    "dino_r50_4s_12e": {
+      "receipt_count": 710,
+      "receipt_manifest_sha256": "ed94457915d284ca831fa7a6122cb48eb0b73f290b7e710938eb776197d16da4",
+      "total_bytes": 155143207,
+      "maximum_identity_or_repeat_noise": 0.0
+    }
+  },
+  "complete_paired_images_per_model": 710,
+  "minimum_required": 400,
+  "arms_per_receipt": 7,
+  "receipt_count_total": 1420,
+  "aggregation_allowed": true,
+  "scientific_effect_readout": false,
+  "D_outcome_displayed": false,
+  "V_F_read": false,
+  "next_gate": "H4_SCIENTIFIC_AGGREGATION"
+}

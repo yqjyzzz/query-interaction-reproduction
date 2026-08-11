@@ -1,0 +1,75 @@
+{
+  "schema_version": "fq.iclr.transport.t0b.v1",
+  "status": "FROZEN_AWAITING_EXACT_EXECUTION_ACK",
+  "parent_t0_status": "T0_REPAIRABLE_BUT_NEW_INPUT_AUDIT_REQUIRED",
+  "single_question": "Do the existing hard-deletion and mass-swap operators have sufficient realized-dose overlap to support pre-readout localization, or is a calibrated operator bridge required first?",
+  "data_scope": {
+    "R_technical_pilot_images_per_model": 8,
+    "D_baseline_capture_images_per_model": 710,
+    "models": ["detr_r50_500", "dino_r50_4s_12e"],
+    "decoder_layer_zero_based": 3,
+    "target_mapping": "competitor_recipient <- leader_source with sham_donor",
+    "control_mapping": "sham_recipient <- leader_source with competitor_donor",
+    "V_read": false,
+    "F_read": false
+  },
+  "capture_contract": {
+    "baseline_forward_only_on_D": true,
+    "D_intervention_forward_allowed": false,
+    "scientific_outcome_capture_allowed": false,
+    "per_head_fields": [
+      "target_attention_weight",
+      "donor_attention_weight",
+      "baseline_recipient_context_norm",
+      "target_value_vector_norm",
+      "donor_value_vector_norm",
+      "target_minus_donor_value_norm",
+      "hard_removed_mass",
+      "hard_row_JS",
+      "hard_immediate_message_norm",
+      "swap_signed_target_weight_change_by_frozen_dose",
+      "swap_absolute_target_weight_change_by_frozen_dose",
+      "swap_row_JS_by_frozen_dose",
+      "swap_immediate_message_norm_by_frozen_dose"
+    ],
+    "frozen_swap_doses": [0.25, 0.5, 0.75, 1.0],
+    "receipt_resume": true,
+    "existing_receipts_never_overwritten": true
+  },
+  "R_pilot_pass": {
+    "exact_receipts_per_model": 8,
+    "finite_fields": true,
+    "head_count_closed": true,
+    "baseline_repeat_max_abs": 0.0,
+    "analytic_swap_vs_executed_swap_tolerance": 0.000005,
+    "analytic_message_vs_executed_recipient_context_tolerance": 0.00001,
+    "no_outcome_fields": true
+  },
+  "overlap_rule": {
+    "unit": "paired_image",
+    "per_image_head_reduction": "median",
+    "primary_metrics": [
+      "absolute_target_weight_change",
+      "immediate_message_norm"
+    ],
+    "mass_pool": "all frozen nonzero swap doses, dose labels retained",
+    "caliper": "0.25 pooled standard deviations on log1p-scaled metric",
+    "sufficient_overlap": "for each model and each primary metric, at least 0.80 of hard observations have a mass observation within caliper and at least 0.80 of mass observations have a hard observation within caliper",
+    "precision_interval": "stratified paired bootstrap 95 percent",
+    "pass_requires_lower_bound": 0.75
+  },
+  "terminal_states": {
+    "T0B_OVERLAP_SUFFICIENT_ENTER_T1": "all capture/integrity checks pass and both models pass both overlap metrics",
+    "T0B_OVERLAP_INSUFFICIENT_DIRECT_T2": "capture/integrity pass but any model or primary metric fails overlap",
+    "T0B_STOP_INVALID_INPUT_CAPTURE": "mapping, reconstruction, identity, receipt, or finite-field integrity fails"
+  },
+  "execution": {
+    "host": "zz02",
+    "mode": "single_gpu_serial",
+    "hard_cap_physical_gpu_hours": 0.5,
+    "exact_ack": "I_ACKNOWLEDGE_T0B_INPUT_ONLY_BASELINE_CAPTURE_NO_OUTCOME_READOUT",
+    "aggregation_before_full_integrity": false,
+    "T1_before_terminal_state": false,
+    "T2_before_terminal_state": false
+  }
+}

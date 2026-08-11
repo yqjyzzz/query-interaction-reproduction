@@ -1,0 +1,50 @@
+{
+  "schema_version": "fq.iclr.h4.gate_c_d.v2",
+  "status": "PASS_TECHNICAL_AMENDMENT_READY_FOR_AUTHORIZED_EXECUTION",
+  "parent_v1_config": "configs/fq_iclr_h4_gate_c_d_v1.json",
+  "technical_amendment": "artifacts/iclr_h4/H4_GATE_C_D_TECHNICAL_TOLERANCE_AMENDMENT_V2.json",
+  "parent_gate_ab_audit": "artifacts/iclr_h4/H4_GATE_AB_AUDIT.json",
+  "parent_r_smoke_audit": "artifacts/iclr_h4/H4_GATE_C_R_SMOKE_AUDIT.json",
+  "required_r_smoke_status": "PASS_H4_GATE_C_R_ONLY_TECHNICAL_SMOKE",
+  "population_manifest": "artifacts/iclr_h4/H4_D_FULL_GT_MANIFEST.json",
+  "population_manifest_sha256": "4f9e761d0b8f5fea51777814637b05b10033555af4023f4a5908b3a4b0eb4eaf",
+  "complete_paired_images_per_model": 710,
+  "models": [
+    "detr_r50_500",
+    "dino_r50_4s_12e"
+  ],
+  "doses": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "arms": {
+    "target": {
+      "recipient_pair_field": "competitor",
+      "target_source_pair_field": "leader",
+      "control_source_pair_field": "sham"
+    },
+    "matched_control": {
+      "recipient_pair_field": "sham",
+      "target_source_pair_field": "leader",
+      "control_source_pair_field": "competitor"
+    }
+  },
+  "technical_tolerance": {
+    "native_attention_swap_max_abs": 5e-06,
+    "pre_existing_ceiling": 1e-05
+  },
+  "execution": {
+    "acknowledgement": "I_ACKNOWLEDGE_H4_GATE_C_D_MASS_PRESERVING_NO_OUTCOME_BEFORE_FULL_INTEGRITY",
+    "single_gpu_serial": true,
+    "physical_gpu_hour_cap": 4.0,
+    "output_namespace": "artifacts/iclr_h4/d_gate_c_raw_v2",
+    "reuse_v1_receipts": false,
+    "scientific_effect_readout_during_raw_execution": false,
+    "aggregation_before_full_integrity": false,
+    "V_read": false,
+    "F_read": false
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "fq.iclr.n1.instrumented_replay.v1",
+  "protocol_id": "future-qc-iclr-n1-mechanism-identification-v1",
+  "status": "AUTHORIZED_FULL_256_IMAGE_REPLAY_BY_EXPLICIT_ACKNOWLEDGEMENT",
+  "history_labels": {
+    "post_m1_new_hypothesis": true,
+    "original_m1_claim_pass": false,
+    "m1_remains_no_go": true,
+    "thresholds_or_protocol_changed_after_m1_readout": false,
+    "original_m2_allowed": false
+  },
+  "locks": {
+    "contract": [
+      "contracts/05_ICLR_N1_MECHANISM_IDENTIFICATION_CONTRACT.md",
+      "9f8a91f1ef34e042dd323c0a9608b4a00c589cba207f3f01e5d9cd4c67df9dd3"
+    ],
+    "n0_final_gate": [
+      "artifacts/iclr_n0/N0_FINAL_GATE.json",
+      "fc391f9fb1f375b7cbf9bd922a3c1eff50d8d1761d6e107b945c986056ce02cc"
+    ],
+    "sample_preparation_config": [
+      "configs/fq_iclr_n1_sample_preparation_v1.json",
+      "ec3b64cd8762a8c5e346808d1e2f8b54f43b2ad571691ee677362a2f3d1e3b09"
+    ],
+    "sample_manifest": [
+      "artifacts/iclr_n1/N1_REPLAY_SAMPLE_MANIFEST.json",
+      "b56eb0eef3b79da37003c0240d6ffaf948561cc18b063d3efdc9a298458a4d27"
+    ],
+    "measurement_instrumentation": [
+      "src/future_qc/iclr_n1/instrumentation.py",
+      "6b3d6da251925863049c13ca27224f677468c82e5d0120d63ac7b529b66f684f"
+    ],
+    "attention_capture": [
+      "src/future_qc/iclr_n1/attention_capture.py",
+      "7f4dbecbe36a031834fa7e00a5d81a2966e0cc481cd32065026e9f4ef2077734"
+    ]
+  },
+  "models": {
+    "detr_r50_500": {
+      "family": "detr",
+      "checkpoint_path": "checkpoints/iclr_m0/DETR_R50_500/detr-r50-e632da11.pth",
+      "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+      "runtime_config": "configs/fq_iclr_m0_detr_r50_runtime_v1.json",
+      "m1_receipts": "artifacts/iclr_m1/detr_scientific_receipts/detr_r50_500.jsonl",
+      "m1_receipts_sha256": "66043c422819f0a9dabe600aa4a1389f4c2ac4936f9f2daf28d19686dff8f352",
+      "query_count": 100
+    },
+    "dino_r50_4s_12e": {
+      "family": "dino",
+      "checkpoint_path": "checkpoints/checkpoint0011_4scale.pth",
+      "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+      "runtime_config": "vendor/DINO/config/DINO/DINO_4scale.py",
+      "m1_receipts": "artifacts/iclr_m1/scientific_receipts/dino/dino_r50_4s_12e/scientific",
+      "m1_receipts_sha256": "549163d56b812fd1fbd5e681558e271fb5df068189a7fe37d4278646aa33844d",
+      "query_count": 900
+    }
+  },
+  "sample": {
+    "manifest_path": "artifacts/iclr_n1/N1_REPLAY_SAMPLE_MANIFEST.json",
+    "images": 256,
+    "technical_smoke_images": 2,
+    "same_images_across_models": true,
+    "n0b_overlap_allowed": false,
+    "d_v_f_read_allowed": false
+  },
+  "intervention": {
+    "arms": [
+      "baseline",
+      "baseline_repeat",
+      "identity",
+      "targeted_direct",
+      "targeted_reverse",
+      "matched_sham",
+      "reverse_sham",
+      "random_edge",
+      "different_object"
+    ],
+    "decoder_layer_input_zero_based": 3,
+    "pair_rule_changed_from_m1": false
+  },
+  "measurement": {
+    "top_k_queries": 10,
+    "extinction_target_probability_threshold": 0.05,
+    "duplicate_primary_iou_threshold": 0.5,
+    "duplicate_sensitivity_iou_threshold": 0.8,
+    "attention_decoder_layers_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "primary_attention_layer_zero_based": 3,
+    "attention_head_rule": "native_equal_weight_mean_heads_no_head_selection",
+    "attention_hook_may_modify_output": false,
+    "required_captures_per_receipt": 108,
+    "m1_scalar_reproduction_absolute_tolerance": 1e-5
+  },
+  "estimands": {
+    "primary_reverse_arm": "targeted_reverse",
+    "primary_reverse_control": "reverse_sham",
+    "primary_reverse_fixed_slot": "fixed_competitor_quality",
+    "secondary_direct_arm": "targeted_direct",
+    "secondary_direct_control": "matched_sham",
+    "secondary_direct_fixed_slot": "fixed_leader_quality",
+    "recovery_definition": "delta_set_minus_delta_fixed",
+    "baseline_substitution_allowed": false
+  },
+  "statistics": {
+    "unit": "image",
+    "models_analyzed_separately": true,
+    "bootstrap": {
+      "kind": "stratified_image_percentile",
+      "draws": 10000,
+      "confidence_level": 0.95,
+      "seed": "FQ-ICLR-N1-BOOTSTRAP-V1"
+    },
+    "robustness": {
+      "untrimmed_mean_primary": true,
+      "median_required": true,
+      "trimmed_mean_fraction_each_tail": 0.1,
+      "winsorize_percentiles": [
+        0.01,
+        0.99
+      ],
+      "leave_one_image_out_direction_required": true,
+      "minimum_same_direction_image_fraction": 0.55,
+      "top_one_percent_absolute_contribution_share_required": true
+    },
+    "n1_exploratory_not_confirmatory": true
+  },
+  "n1_gate": {
+    "minimum_valid_paired_images_per_model": 200,
+    "minimum_bootstrap_direction_probability": 0.9,
+    "allowed_mechanism_routes": [
+      "shared_h1",
+      "shared_h2",
+      "detr_h1_dino_h2",
+      "detr_h2_dino_h1"
+    ],
+    "h3_only_allows_n2": false,
+    "negative_control_response_of_comparable_size_allows_n2": false,
+    "original_m2_remains_forbidden": true
+  },
+  "execution": {
+    "single_gpu_serial": true,
+    "isolated_family_processes": true,
+    "hard_cap_physical_gpu_hours": 1.0,
+    "conservative_prelaunch_reservation_gpu_hours": 0.1,
+    "technical_smoke_ack": "I_ACKNOWLEDGE_N1_TWO_MODEL_TWO_IMAGE_TECHNICAL_SMOKE",
+    "full_replay_ack": "I_ACKNOWLEDGE_N1_256_IMAGE_MECHANISM_REPLAY",
+    "resume_only_after_full_receipt_validation": true,
+    "overwrite_receipts": false,
+    "effect_readout_during_execution": false,
+    "aggregation_before_integrity_gate": false,
+    "gpu_execution_currently_allowed": true,
+    "authorized_modes": [
+      "technical-smoke",
+      "replay"
+    ],
+    "authorization_basis": "User provided I_ACKNOWLEDGE_N1_256_IMAGE_MECHANISM_REPLAY after the independent technical-smoke integrity PASS."
+  },
+  "outputs": {
+    "preflight": "artifacts/iclr_n1/N1_PREFLIGHT.json",
+    "technical_smoke": "artifacts/iclr_n1/n1_technical_smoke",
+    "replay": "artifacts/iclr_n1/n1_replay",
+    "integrity_audit": "artifacts/iclr_n1/N1_REPLAY_INTEGRITY_AUDIT.json",
+    "aggregate": "artifacts/iclr_n1/N1_MECHANISM_AGGREGATE.json",
+    "gate": "artifacts/iclr_n1/N1_FINAL_GATE.json"
+  }
+}

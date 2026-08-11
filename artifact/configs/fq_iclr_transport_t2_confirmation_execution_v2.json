@@ -1,0 +1,22 @@
+{
+  "schema_version": "fq.iclr.transport.t2_confirmation_execution.v2",
+  "status": "FROZEN_AWAITING_FINAL_CONFIRMATION_ACK",
+  "confirmation_config_sha256": "310890b16df8c2270481e072babdc4454d57a76681dba0b32aac8702c95331a9",
+  "pair_manifest_sha256": "b2207b723e63f4b771cb395c466fe0b116ee231ce99a74b9cd411e3c2d026477",
+  "pair_integrity_sha256": "e0f352aed3fd0f24c0cffeb4ba66d87362bd1b9cb15745c2a7b2784fcc0d17db",
+  "message_v2_integrity_sha256": "c3f47db213047a84e556de0189236837c200c9f141850b4a93d77b54e032756b",
+  "input_integrity_sha256": "87ecd93feeddba4d3d730180180f0a7ec86ae9535f19b5f2bd53711f095555b8",
+  "realized_overlap_sha256": "7f1fa9298021f507f284d7fe5414cd6245857df2e4c3a04f23a6422f6c34d053",
+  "outcome_blind_mapping_sha256": "239d110b124b122beceead52c98fe37e990881678a83e98f84498f5a17f04f48",
+  "required_overlap_status": "PASS_T2_REALIZED_DOSE_OVERLAP",
+  "required_mapping_status": "PASS_T2_OUTCOME_BLIND_MAPPING_FROZEN",
+  "operators": ["A_RENORMALIZING_ATTENUATION", "B_FIXED_DONOR_TRANSFER", "C_V2_BOUNDED_MESSAGE_ATTENUATION", "HARD_DELETION_ENDPOINT"],
+  "initial_images_per_model": 128,
+  "precision_extension_authorized": false,
+  "single_gpu_serial": true,
+  "aggregation_before_full_integrity": false,
+  "scientific_effect_readout_during_execution": false,
+  "V_read": false,
+  "F_read": false,
+  "exact_ack": "I_ACKNOWLEDGE_T2_FINAL_CONFIRMATION_128_V2_MAPPED_NO_OUTCOME_BEFORE_FULL_INTEGRITY"
+}

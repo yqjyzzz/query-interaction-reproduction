@@ -1,0 +1,3206 @@
+{
+  "D_V_F_read": false,
+  "image_count": 8,
+  "intervention_outcomes_used_for_selection": false,
+  "rows": [
+    {
+      "image_id": "96dd97e7202ab34e",
+      "image_sha256": "73b1772e4c97aadd0b6dc9eacc2c8726d2cc5ec467c573838ede0ea3b06f8b96",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 2,
+              "leader_query_id": 61
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "484fa5fd5ba91959ae9d266eab663e022353cac279a155b916c55fc66dec0dcf",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 62,
+                "candidate_pool_mean": [
+                  0.20770148840552616,
+                  16.815811126462876,
+                  0.0037182672061927377
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.2591233649131493,
+                  0.21218455786466653,
+                  0.00225756713474551
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  1.118866503453644,
+                  3.1245399413062724,
+                  -83.25499204269829
+                ],
+                "target": [
+                  0.7072715058276685,
+                  16.216838836669922,
+                  0.20165114104747772
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 83.32111564379778
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.879817962646484,
+                "leader_to_source_attention": 0.013697407208383083,
+                "own_class_score": 0.9971959590911865,
+                "query_id": 81,
+                "target_class_score": 2.664531348273158e-05,
+                "target_iou": 0.04255286604166031
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 61,
+              "source_query_id": 81
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "96dd97e7202ab34e",
+            "image_sha256": "73b1772e4c97aadd0b6dc9eacc2c8726d2cc5ec467c573838ede0ea3b06f8b96",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 77,
+                "candidate_pool_mean": [
+                  0.03915430083606662,
+                  16.7975245636779,
+                  0.004079096052529556
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.09436352429699918,
+                  0.20936632528155763,
+                  0.003217662477044863
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -9.578575694323446,
+                  1.2117073711033841,
+                  -56.05809147261674
+                ],
+                "target": [
+                  0.9038730263710022,
+                  16.216838836669922,
+                  0.20165114104747772
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 56.883450727231164
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.470529556274414,
+                "leader_to_source_attention": 0.021275123581290245,
+                "own_class_score": 0.999306321144104,
+                "query_id": 12,
+                "target_class_score": 4.866109065915225e-06,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 61,
+              "source_query_id": 12
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 5494,
+                "sha256": "00393eb687c5fd1fb3958b15b847fb8d784bfe0ccdffdec9e5f46ecbc143b1e0"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    2,
+                    61
+                  ],
+                  [
+                    61,
+                    2
+                  ],
+                  [
+                    61,
+                    12
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 55,
+              "source_query_id": 50
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 83,
+              "leader_query_id": 7
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "492d28b7567ac4ebeb293dafc387586985d32132e11b8154183b861e7a030516",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 586,
+                "candidate_pool_mean": [
+                  0.04454931318473847,
+                  15.917318580093644,
+                  0.0005178145409929514
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.06728446855044866,
+                  0.07781691724937075,
+                  0.0011180071840646859
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  6.484213507612787,
+                  -0.11094777191903725,
+                  -4.456481501033647
+                ],
+                "target": [
+                  0.18416220633474242,
+                  15.979281425476074,
+                  0.026769429445266724
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 7.868771288419624
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 15.970647811889648,
+                "leader_to_source_attention": 0.021787051111459732,
+                "own_class_score": 0.6204490661621094,
+                "query_id": 4,
+                "target_class_score": 0.03218194842338562,
+                "target_iou": 0.012291325256228447
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 7,
+              "source_query_id": 4
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "96dd97e7202ab34e",
+            "image_sha256": "73b1772e4c97aadd0b6dc9eacc2c8726d2cc5ec467c573838ede0ea3b06f8b96",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 705,
+                "candidate_pool_mean": [
+                  0.0208590969560975,
+                  15.922432047255496,
+                  0.0006189139160100149
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.03368668595018021,
+                  0.08032667804413575,
+                  0.0015251327811584337
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -5.670304209263496,
+                  -0.4497045892647009,
+                  0.6407185723510019
+                ],
+                "target": [
+                  0.22615328431129456,
+                  15.979281425476074,
+                  0.026769429445266724
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 5.724081090633899
+              },
+              "features": {
+                "argmax_coco_class": 28,
+                "hidden_l2_norm": 15.943158149719238,
+                "leader_to_source_attention": 0.02774661034345627,
+                "own_class_score": 0.4798243045806885,
+                "query_id": 5,
+                "target_class_score": 0.035139527171850204,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 7,
+              "source_query_id": 5
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 670630,
+                "sha256": "22228edeef291bebc983178fbcd952b3c9dddf07f076c692fc939d9b8dcc116e"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    7,
+                    5
+                  ],
+                  [
+                    7,
+                    83
+                  ],
+                  [
+                    83,
+                    7
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 745,
+              "source_query_id": 879
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "6efb451aea34eebfffe100e43a65838da1441de98f7eb57054fb299a6e654b9c",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.325,
+            "xmin": 0.0,
+            "ymax": 0.54791665,
+            "ymin": 0.26041666
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 178397,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "822f5a684c1bc580fbe3a86cb45ab5af76bf64d24bf3a2a9d7eed81870042993",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.959375,
+            "xmin": 0.8375,
+            "ymax": 0.51666665,
+            "ymin": 0.2
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 178402,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "89627eaa8b8323fd262f758b5c5a2df7a8a471eefa8e40434a030c507cc7a274",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.95625,
+            "xmin": 0.83125,
+            "ymax": 0.7,
+            "ymin": 0.25416666
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 178401,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "9cb52bb7424785886ec241d8cffe2e9c8fcc68cbbb13a2492824d18ab69e5925",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 1,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.284375,
+            "xmin": 0.0,
+            "ymax": 0.35625,
+            "ymin": 0.22708334
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 178399,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "b356a43714561ecc3139c289b0df0e7fb6596a6a7755b374086888784cc6b55b",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.109375,
+            "xmin": 0.00625,
+            "ymax": 0.63958335,
+            "ymin": 0.25416666
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 178400,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "c3da44ce389fb6747fa63c202628afcc73eb34250384368c74741b004068fd46",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 0.8484375,
+            "xmin": 0.084375,
+            "ymax": 0.87083334,
+            "ymin": 0.21458334
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 178398,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "edb64503bbdb3941fcefc1a76a01e0ce88e272d94c19099a075e7c1cee56b940",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.890625,
+            "xmin": 0.0828125,
+            "ymax": 0.87291664,
+            "ymin": 0.21666667
+          },
+          "coco_id": 8,
+          "coco_name": "truck",
+          "confidence": 1,
+          "label_name": "/m/07r04",
+          "official_bbox_data_row_number": 178396,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "6efb451aea34eebfffe100e43a65838da1441de98f7eb57054fb299a6e654b9c",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 0,
+          "is_truncated": 0
+        },
+        "bbox": {
+          "xmax": 0.325,
+          "xmin": 0.0,
+          "ymax": 0.54791665,
+          "ymin": 0.26041666
+        },
+        "candidate_count": 7,
+        "coco_id": 3,
+        "coco_name": "car",
+        "confidence": 1,
+        "label_name": "/m/0k4j",
+        "official_bbox_data_row_number": 178397,
+        "selection_hash": "095c87e093b05708d65ab46826a4eb68860277e178ab687c393065ba00eec541",
+        "source": "xclick"
+      },
+      "stratum": "n5plus|has_groupof|medium"
+    },
+    {
+      "image_id": "c8bf66f8bf81e32e",
+      "image_sha256": "29f599a8f1b1d6c15d24693170690095ba86885c04abe97fb1072289f554a425",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 59,
+              "leader_query_id": 71
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "8ab36336c292d9363d5a2da7f253967c99d22c275fdd059bed4606385c792ef5",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 2,
+                "candidate_pool_mean": [
+                  8.61812659422867e-05,
+                  16.80353832244873,
+                  0.01925115752965212
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  1.1257885489612818e-05,
+                  0.14359378814697266,
+                  0.003479055128991604
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -269.6287675193821,
+                  2.124886264768976,
+                  2.4209243638316345
+                ],
+                "target": [
+                  0.0031328889408705394,
+                  16.642011642456055,
+                  0.01430768333375454
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 269.6480081336308
+              },
+              "features": {
+                "argmax_coco_class": 15,
+                "hidden_l2_norm": 16.947132110595703,
+                "leader_to_source_attention": 0.022730212658643723,
+                "own_class_score": 9.743915143189952e-05,
+                "query_id": 85,
+                "target_class_score": 3.224710962967947e-05,
+                "target_iou": 0.048264555633068085
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 71,
+              "source_query_id": 85
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "c8bf66f8bf81e32e",
+            "image_sha256": "29f599a8f1b1d6c15d24693170690095ba86885c04abe97fb1072289f554a425",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 3,
+                "candidate_pool_mean": [
+                  3.5838622958787404e-05,
+                  16.85264714558919,
+                  0.029958545540769894
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  5.721860425752091e-06,
+                  0.13626984387633545,
+                  0.015406671685830329
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -557.1493757762212,
+                  2.266482008259626,
+                  2.4058173617953154
+                ],
+                "target": [
+                  0.003231845097616315,
+                  16.642011642456055,
+                  0.01430768333375454
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 557.1591799707737
+              },
+              "features": {
+                "argmax_coco_class": 18,
+                "hidden_l2_norm": 16.950864791870117,
+                "leader_to_source_attention": 0.05137332156300545,
+                "own_class_score": 4.3914133129874244e-05,
+                "query_id": 32,
+                "target_class_score": 4.3914133129874244e-05,
+                "target_iou": 0.006629883777350187
+              },
+              "recipient_query_id": 71,
+              "source_query_id": 32
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 6028,
+                "sha256": "fd139bbbee9d562509710f0b3d64d8c99d357874c1957bb39179b0888b85e371"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    59,
+                    71
+                  ],
+                  [
+                    71,
+                    32
+                  ],
+                  [
+                    71,
+                    59
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 60,
+              "source_query_id": 90
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 1,
+              "leader_query_id": 0
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "0232f6ddbb8e994ddaeee7617731867786ad2526831e44940da5da064b56e65d",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 259,
+                "candidate_pool_mean": [
+                  0.004868885984511248,
+                  15.848577915471493,
+                  0.0005985934944786527
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.004611367476968838,
+                  0.035437531672994335,
+                  0.0008674270571201586
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -1.512514002854555,
+                  2.5780871726747634,
+                  -10.740706779462299
+                ],
+                "target": [
+                  0.04068293911343742,
+                  15.828041076660156,
+                  0.0184219591319561
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 11.148857080487158
+              },
+              "features": {
+                "argmax_coco_class": 85,
+                "hidden_l2_norm": 15.919402122497559,
+                "leader_to_source_attention": 0.009105179458856583,
+                "own_class_score": 0.033708181232213974,
+                "query_id": 16,
+                "target_class_score": 0.00371377682313323,
+                "target_iou": 0.0019288171315565705
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 0,
+              "source_query_id": 16
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "c8bf66f8bf81e32e",
+            "image_sha256": "29f599a8f1b1d6c15d24693170690095ba86885c04abe97fb1072289f554a425",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 268,
+                "candidate_pool_mean": [
+                  0.001906686463222123,
+                  15.850027500693479,
+                  0.0006109490970982788
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.0009553678095760532,
+                  0.03624883288828856,
+                  0.0009060322521604204
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -39.89532847092827,
+                  3.147200263725994,
+                  -14.196556421539853
+                ],
+                "target": [
+                  0.043624963611364365,
+                  15.828041076660156,
+                  0.0184219591319561
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 42.46274034413254
+              },
+              "features": {
+                "argmax_coco_class": 23,
+                "hidden_l2_norm": 15.942123413085938,
+                "leader_to_source_attention": 0.005559421144425869,
+                "own_class_score": 0.027825061231851578,
+                "query_id": 43,
+                "target_class_score": 0.00551025103777647,
+                "target_iou": 0.04851601645350456
+              },
+              "recipient_query_id": 0,
+              "source_query_id": 43
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 34195,
+                "sha256": "4f08b644ad39efff9d3dbfe2cfb646563af7b4cb83e4ec93e5b2ee10e9e23f6a"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    43
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 38,
+              "source_query_id": 36
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "88300d71be221038eb71e7808e3a5a922d085efb3906abae5437b34f0b32fc2a",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 1.0,
+            "xmin": 0.025270758,
+            "ymax": 1.0,
+            "ymin": 0.0054151625
+          },
+          "coco_id": 18,
+          "coco_name": "dog",
+          "confidence": 1,
+          "label_name": "/m/0bt9lr",
+          "official_bbox_data_row_number": 239220,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "88300d71be221038eb71e7808e3a5a922d085efb3906abae5437b34f0b32fc2a",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 0,
+          "is_truncated": 1
+        },
+        "bbox": {
+          "xmax": 1.0,
+          "xmin": 0.025270758,
+          "ymax": 1.0,
+          "ymin": 0.0054151625
+        },
+        "candidate_count": 1,
+        "coco_id": 18,
+        "coco_name": "dog",
+        "confidence": 1,
+        "label_name": "/m/0bt9lr",
+        "official_bbox_data_row_number": 239220,
+        "selection_hash": "c2fc325df215e3b7a30230d3b5c9de2944e04a54a11bd979dbb14933bcdcff84",
+        "source": "xclick"
+      },
+      "stratum": "n1|ordinary_only|large"
+    },
+    {
+      "image_id": "e46c1c159ab60177",
+      "image_sha256": "8ed778f7dc32ccdbc661faf7708135162c52e5fa059c5236d557d742ce508c2d",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 61,
+              "leader_query_id": 2
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "6f4a6cb615937aa0023c22624a7886da7241218553826d27ac499bb4c0ce7ab2",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 65,
+                "candidate_pool_mean": [
+                  0.05972450041563906,
+                  16.523713713425856,
+                  0.004763074591755867
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.19722102083843182,
+                  0.1691614623367657,
+                  0.003417451336089251
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.0005192435620984316,
+                  0.13390563104843836,
+                  -0.8158371118198713
+                ],
+                "target": [
+                  0.0014989062508878287,
+                  16.715303421020508,
+                  0.01317550614476204
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 0.8267533977329312
+              },
+              "features": {
+                "argmax_coco_class": 76,
+                "hidden_l2_norm": 16.73795509338379,
+                "leader_to_source_attention": 0.010387422516942024,
+                "own_class_score": 0.0013965005055069923,
+                "query_id": 23,
+                "target_class_score": 2.8587728593265638e-05,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 2,
+              "source_query_id": 23
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "e46c1c159ab60177",
+            "image_sha256": "8ed778f7dc32ccdbc661faf7708135162c52e5fa059c5236d557d742ce508c2d",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 66,
+                "candidate_pool_mean": [
+                  1.7204550038679205e-05,
+                  16.519539139487527,
+                  0.004787098715138255
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  1.604857632476035e-05,
+                  0.17121562437353938,
+                  0.0033969890773064533
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -198.54032432462685,
+                  -2.728206547933508,
+                  -2.0096736416891074
+                ],
+                "target": [
+                  0.003258180571720004,
+                  16.715303421020508,
+                  0.01317550614476204
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 198.56923800539275
+              },
+              "features": {
+                "argmax_coco_class": 74,
+                "hidden_l2_norm": 16.248191833496094,
+                "leader_to_source_attention": 0.006348666734993458,
+                "own_class_score": 0.10184347629547119,
+                "query_id": 44,
+                "target_class_score": 7.189102325355634e-05,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 2,
+              "source_query_id": 44
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 6032,
+                "sha256": "a7c853c6db9b1cf9374ff84b00d458a4873f3bf29f2e2a0c0ca54ca4fda3b2ed"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    2,
+                    44
+                  ],
+                  [
+                    2,
+                    61
+                  ],
+                  [
+                    61,
+                    2
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 60,
+              "source_query_id": 95
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 5,
+              "leader_query_id": 9
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "28cec66127b22461bed46bd93b6ec6a02e1a294e6250fa38a308c277c550e6a3",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 682,
+                "candidate_pool_mean": [
+                  0.026907039471339336,
+                  15.85629238620881,
+                  0.0006272184363113096
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.048680716005710944,
+                  0.05323311953322318,
+                  0.0009254198371982356
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -1.6659333560876926,
+                  1.3131198581364911,
+                  -2.6294243336049403
+                ],
+                "target": [
+                  0.11926034850701138,
+                  15.926015853881836,
+                  0.012737661600112915
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 3.3783857143481684
+              },
+              "features": {
+                "argmax_coco_class": 77,
+                "hidden_l2_norm": 15.995917320251465,
+                "leader_to_source_attention": 0.010304340161383152,
+                "own_class_score": 0.038161519914865494,
+                "query_id": 383,
+                "target_class_score": 0.03773396089673042,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 9,
+              "source_query_id": 383
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "e46c1c159ab60177",
+            "image_sha256": "8ed778f7dc32ccdbc661faf7708135162c52e5fa059c5236d557d742ce508c2d",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 727,
+                "candidate_pool_mean": [
+                  0.007382618721659094,
+                  15.857744640628443,
+                  0.0006346279211404426
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.00797310350137657,
+                  0.05423519666884701,
+                  0.0009382273156710281
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -20.212221757041643,
+                  2.202472382584021,
+                  -7.211685716520454
+                ],
+                "target": [
+                  0.24493256211280823,
+                  15.926015853881836,
+                  0.012737661600112915
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 21.572973921685858
+              },
+              "features": {
+                "argmax_coco_class": 77,
+                "hidden_l2_norm": 16.045467376708984,
+                "leader_to_source_attention": 0.005971461068838835,
+                "own_class_score": 0.08748598396778107,
+                "query_id": 102,
+                "target_class_score": 0.08377842605113983,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 9,
+              "source_query_id": 102
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 616959,
+                "sha256": "d33fd57c1de0ce0ae31247d89a6f51ba69ea36615ad32a2eeb96a0ead1c77e5f"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    5,
+                    9
+                  ],
+                  [
+                    9,
+                    5
+                  ],
+                  [
+                    9,
+                    102
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 686,
+              "source_query_id": 248
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "e80c11d8b96b463f1e7e0345a3c95d3c16038cc9796229bef73c424267d00f10",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 0.440625,
+            "xmin": 0.0,
+            "ymax": 0.99791664,
+            "ymin": 0.7125
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 271989,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "e80c11d8b96b463f1e7e0345a3c95d3c16038cc9796229bef73c424267d00f10",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 1,
+          "is_truncated": 1
+        },
+        "bbox": {
+          "xmax": 0.440625,
+          "xmin": 0.0,
+          "ymax": 0.99791664,
+          "ymin": 0.7125
+        },
+        "candidate_count": 1,
+        "coco_id": 1,
+        "coco_name": "person",
+        "confidence": 1,
+        "label_name": "/m/01g317",
+        "official_bbox_data_row_number": 271989,
+        "selection_hash": "2363da71872b8bb5553e6a2e95be052ff83a6984f305def20a569d9a735d0ce1",
+        "source": "xclick"
+      },
+      "stratum": "n1|ordinary_only|medium"
+    },
+    {
+      "image_id": "3f9b254ad6c9da52",
+      "image_sha256": "de1d144c2252a0d48687fedefa2ad8a5ae2cd1e0d225f5629ec3ebdacb901eef",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 62,
+              "leader_query_id": 22
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "b21e910b8a5544e716e66436cd7b24e6b4cf143a25187023c9226423a61bb865",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 88,
+                "candidate_pool_mean": [
+                  0.2875821554811079,
+                  16.63148138739846,
+                  0.005722022721866696
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.3084588104282325,
+                  0.3059488341530998,
+                  0.0039103811228242726
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.047516270302862776,
+                  -1.1400807660899266,
+                  -0.8121394026389027
+                ],
+                "target": [
+                  0.046890948228784174,
+                  16.95519256591797,
+                  0.021795999258756638
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 1.4005757239329697
+              },
+              "features": {
+                "argmax_coco_class": 79,
+                "hidden_l2_norm": 16.606386184692383,
+                "leader_to_source_attention": 0.01862022466957569,
+                "own_class_score": 0.03223413601517677,
+                "query_id": 97,
+                "target_class_score": 9.508250514045358e-06,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 22,
+              "source_query_id": 97
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "3f9b254ad6c9da52",
+            "image_sha256": "de1d144c2252a0d48687fedefa2ad8a5ae2cd1e0d225f5629ec3ebdacb901eef",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 96,
+                "candidate_pool_mean": [
+                  0.032327099162290075,
+                  16.636337439219158,
+                  0.006183392519233166
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.17363927447114624,
+                  0.3061339016824553,
+                  0.004349805698600365
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.6875704577278703,
+                  -0.034273645523862875,
+                  -0.6014373019824083
+                ],
+                "target": [
+                  0.11949833482503891,
+                  16.95519256591797,
+                  0.021795999258756638
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 0.9141414799326673
+              },
+              "features": {
+                "argmax_coco_class": 79,
+                "hidden_l2_norm": 16.944700241088867,
+                "leader_to_source_attention": 0.01917986385524273,
+                "own_class_score": 0.05843600630760193,
+                "query_id": 77,
+                "target_class_score": 0.00010909939737757668,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 22,
+              "source_query_id": 77
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 3351,
+                "sha256": "0bbfa13e8abd0a6043230f64676c443b8dd6c29c68860826a95d5f900098939e"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    22,
+                    62
+                  ],
+                  [
+                    22,
+                    77
+                  ],
+                  [
+                    62,
+                    22
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 33,
+              "source_query_id": 87
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 115,
+              "leader_query_id": 18
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "090382790015266d478a0bf2160578273f2b216a00a9b3995773f10487edc5d1",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 828,
+                "candidate_pool_mean": [
+                  0.06228692850459632,
+                  15.908240415047908,
+                  0.0006544013101651709
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.061145216018843374,
+                  0.06120625574948186,
+                  0.0011570539695837238
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.3092360768087524,
+                  1.0988259176786992,
+                  -17.69091005250325
+                ],
+                "target": [
+                  0.10029131895245545,
+                  15.899941444396973,
+                  0.031933125108480453
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 17.727699902534535
+              },
+              "features": {
+                "argmax_coco_class": 67,
+                "hidden_l2_norm": 15.967196464538574,
+                "leader_to_source_attention": 0.011463787406682968,
+                "own_class_score": 0.08138301223516464,
+                "query_id": 831,
+                "target_class_score": 0.0061353761702775955,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 18,
+              "source_query_id": 831
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "3f9b254ad6c9da52",
+            "image_sha256": "de1d144c2252a0d48687fedefa2ad8a5ae2cd1e0d225f5629ec3ebdacb901eef",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 860,
+                "candidate_pool_mean": [
+                  0.008971754433505974,
+                  15.905698446894801,
+                  0.0007399533156447349
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.05076862995015765,
+                  0.06202547217252917,
+                  0.0016951417778953196
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -2.1067349302046057,
+                  1.0730887740037816,
+                  -11.309127704754946
+                ],
+                "target": [
+                  0.12128374725580215,
+                  15.899941444396973,
+                  0.031933125108480453
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 11.553623718361829
+              },
+              "features": {
+                "argmax_coco_class": 51,
+                "hidden_l2_norm": 15.966500282287598,
+                "leader_to_source_attention": 0.012762550264596939,
+                "own_class_score": 0.1225036084651947,
+                "query_id": 90,
+                "target_class_score": 0.014327701181173325,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 18,
+              "source_query_id": 90
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 576593,
+                "sha256": "008e2322ac627da66ab2f6f9d2acfb1365e7d1d59b2eea780c028e5047e2b188"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    18,
+                    90
+                  ],
+                  [
+                    18,
+                    115
+                  ],
+                  [
+                    115,
+                    18
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 641,
+              "source_query_id": 337
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "ca034098e6dba73c7a9329951a54229582b2441f9dc3077fa83587d976230408",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 1.0,
+            "xmin": 0.9660767,
+            "ymax": 0.6039823,
+            "ymin": 0.2079646
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 76159,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "0bc21bf65f18b755dc66bcf1873459e856ffe8b378084c393266512290bf37fb",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.35840708,
+            "xmin": 0.0,
+            "ymax": 1.0,
+            "ymin": 0.26548672
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 76155,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "28350569d7b43bfabc2670f61bd5d3a16fb17fc4d320cbf602bea1ccd60c0d92",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.719764,
+            "xmin": 0.39823008,
+            "ymax": 0.88053095,
+            "ymin": 0.23451327
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 76157,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "67c8f2d3ea84679a1789b23fec6efdfb054d76382ab3ff78790075d6d74c35c1",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 1.0,
+            "xmin": 0.6932153,
+            "ymax": 0.75663716,
+            "ymin": 0.07522124
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 76158,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "e33a42e8bcde8f9b14f08b2cfd25de46259e8ef04725ac53874a1841145a543e",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.48377582,
+            "xmin": 0.29941002,
+            "ymax": 0.90929204,
+            "ymin": 0.16814159
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 76156,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "ca034098e6dba73c7a9329951a54229582b2441f9dc3077fa83587d976230408",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 0,
+          "is_truncated": 1
+        },
+        "bbox": {
+          "xmax": 1.0,
+          "xmin": 0.9660767,
+          "ymax": 0.6039823,
+          "ymin": 0.2079646
+        },
+        "candidate_count": 5,
+        "coco_id": 1,
+        "coco_name": "person",
+        "confidence": 1,
+        "label_name": "/m/01g317",
+        "official_bbox_data_row_number": 76159,
+        "selection_hash": "0e2ed291e1727a7b44dbfe281bb428b56e0d04a561786c264f4279d828b92409",
+        "source": "xclick"
+      },
+      "stratum": "n5plus|ordinary_only|large"
+    },
+    {
+      "image_id": "da8186b39f042cdf",
+      "image_sha256": "61df58ff231dc938476d050badf5ac590fdd5ed14a745386ff03717eb258216a",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 93,
+              "leader_query_id": 87
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "d2f5cc71acd7540b4add55d98d49f01a59157cd6e6a0ffa17cc6830f0c2f58f7",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 48,
+                "candidate_pool_mean": [
+                  0.0078000127681434606,
+                  16.302303194999695,
+                  0.005746235551972252
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.039440107560041786,
+                  0.23160226753749105,
+                  0.0025730357660738623
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.8135290644697697,
+                  0.23921508336845737,
+                  -2.4382623547838
+                ],
+                "target": [
+                  0.032234776163589725,
+                  16.272842407226562,
+                  0.0203673355281353
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 2.5815066735540078
+              },
+              "features": {
+                "argmax_coco_class": 5,
+                "hidden_l2_norm": 16.328245162963867,
+                "leader_to_source_attention": 0.014093599282205105,
+                "own_class_score": 0.00014910235768184066,
+                "query_id": 52,
+                "target_class_score": 5.258457804302452e-06,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 87,
+              "source_query_id": 52
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "da8186b39f042cdf",
+            "image_sha256": "61df58ff231dc938476d050badf5ac590fdd5ed14a745386ff03717eb258216a",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 65,
+                "candidate_pool_mean": [
+                  0.017585580538061026,
+                  16.242310362595777,
+                  0.0068007390229747845
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.12029393103248044,
+                  0.24142768758130026,
+                  0.0057533651480670914
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.7973002832474949,
+                  -0.37091069321433534,
+                  -0.7229566801608143
+                ],
+                "target": [
+                  0.09591485559940338,
+                  16.272842407226562,
+                  0.0203673355281353
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 1.138388705757581
+              },
+              "features": {
+                "argmax_coco_class": 5,
+                "hidden_l2_norm": 16.18329429626465,
+                "leader_to_source_attention": 0.016207901760935783,
+                "own_class_score": 7.40716222935589e-06,
+                "query_id": 32,
+                "target_class_score": 4.47031425210298e-06,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 87,
+              "source_query_id": 32
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 1288,
+                "sha256": "2719163de41a706c8cd5dfb3633885488b19d9f07bc0a43e84dad939b4e43631"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    87,
+                    32
+                  ],
+                  [
+                    87,
+                    93
+                  ],
+                  [
+                    93,
+                    87
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 13,
+              "source_query_id": 1
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 83,
+              "leader_query_id": 0
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "e6759d3362263483afb964f648110dac07cbef87494f06baab40b38c6f1829db",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 575,
+                "candidate_pool_mean": [
+                  0.01605541461997706,
+                  15.91821324887483,
+                  0.0005783914713538252
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.02361869451595117,
+                  0.05684701100595899,
+                  0.0009420875926642177
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  7.498604918401988,
+                  -0.06673554798274946,
+                  -28.22210788502632
+                ],
+                "target": [
+                  0.04127842264642612,
+                  15.991626739501953,
+                  0.04164803400635719
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 29.201385289566517
+              },
+              "features": {
+                "argmax_coco_class": 9,
+                "hidden_l2_norm": 15.987833023071289,
+                "leader_to_source_attention": 0.015060336329042912,
+                "own_class_score": 0.21838568150997162,
+                "query_id": 5,
+                "target_class_score": 0.18407677114009857,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 0,
+              "source_query_id": 5
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "da8186b39f042cdf",
+            "image_sha256": "61df58ff231dc938476d050badf5ac590fdd5ed14a745386ff03717eb258216a",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 824,
+                "candidate_pool_mean": [
+                  0.010844231436493325,
+                  15.91410477184555,
+                  0.0006498343944885455
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.02417691171445066,
+                  0.05805955492098081,
+                  0.0013256777289171488
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  13.839295210923403,
+                  -1.5685483917423662,
+                  -10.773354098787973
+                ],
+                "target": [
+                  0.04458168148994446,
+                  15.991626739501953,
+                  0.04164803400635719
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 17.608281986900273
+              },
+              "features": {
+                "argmax_coco_class": 3,
+                "hidden_l2_norm": 15.900557518005371,
+                "leader_to_source_attention": 0.027366038411855698,
+                "own_class_score": 0.3791730999946594,
+                "query_id": 1,
+                "target_class_score": 0.3791730999946594,
+                "target_iou": 0.0037976307794451714
+              },
+              "recipient_query_id": 0,
+              "source_query_id": 1
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 463491,
+                "sha256": "019ebc7a0e07b4af5b92dcd6fca292ec59fca2a1ed530443a40561877b22c518"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    83
+                  ],
+                  [
+                    83,
+                    0
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 515,
+              "source_query_id": 509
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "ffa662c06daaece9fef048f516276bc27374c312ec83ebe77394c0f594aab5ae",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.6953125,
+            "xmin": 0.5859375,
+            "ymax": 0.28125,
+            "ymin": 0.22083333
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 260367,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "ef25e76680c4b1d386cdfc73d42bbf2d1265ecee79a4722176df4d0e1bb8472b",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.7890625,
+            "xmin": 0.1234375,
+            "ymax": 0.63125,
+            "ymin": 0.25416666
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 260366,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "ffa662c06daaece9fef048f516276bc27374c312ec83ebe77394c0f594aab5ae",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 1,
+          "is_truncated": 0
+        },
+        "bbox": {
+          "xmax": 0.6953125,
+          "xmin": 0.5859375,
+          "ymax": 0.28125,
+          "ymin": 0.22083333
+        },
+        "candidate_count": 2,
+        "coco_id": 3,
+        "coco_name": "car",
+        "confidence": 1,
+        "label_name": "/m/0k4j",
+        "official_bbox_data_row_number": 260367,
+        "selection_hash": "13319c6509bb8e00345c92b7b26cfe0c642947c2beec82209535845e69f36c06",
+        "source": "xclick"
+      },
+      "stratum": "n2_4|ordinary_only|medium"
+    },
+    {
+      "image_id": "74ff77cd1bdb4cd2",
+      "image_sha256": "bae612fd8f07a93fd67d02df54b99d365781323b875321f1e738f751c3d530f5",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 72,
+              "leader_query_id": 71
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "345bcd0181f45a2dbeec86042e4f15dd05ecfdcefe20cf55f78fad50a5ec97f3",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 85,
+                "candidate_pool_mean": [
+                  0.09215733104056734,
+                  16.695408316219556,
+                  0.004547360576072927
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.22907899021440145,
+                  0.17916182911481854,
+                  0.004510471610550439
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  2.8531583141430747,
+                  4.319313811699059,
+                  -5.632350623001923
+                ],
+                "target": [
+                  0.3425600339324408,
+                  15.872145652770996,
+                  0.05290769785642624
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 7.64985997975964
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.6460018157959,
+                "leader_to_source_attention": 0.02750314027070999,
+                "own_class_score": 0.9961586594581604,
+                "query_id": 90,
+                "target_class_score": 3.7438094295794144e-06,
+                "target_iou": 0.0158991701900959
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 71,
+              "source_query_id": 90
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "74ff77cd1bdb4cd2",
+            "image_sha256": "bae612fd8f07a93fd67d02df54b99d365781323b875321f1e738f751c3d530f5",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 87,
+                "candidate_pool_mean": [
+                  0.00026039687058290387,
+                  16.69450352109712,
+                  0.004480041652829547
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.0007091089391314156,
+                  0.18354036541595403,
+                  0.004479937442753732
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -646.4790695061345,
+                  2.5509464155581796,
+                  -11.413428602678888
+                ],
+                "target": [
+                  0.4620663523674011,
+                  15.872145652770996,
+                  0.05290769785642624
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 646.5848443859483
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.340347290039062,
+                "leader_to_source_attention": 0.0017762517090886831,
+                "own_class_score": 0.013480837456882,
+                "query_id": 41,
+                "target_class_score": 0.0036422652192413807,
+                "target_iou": 0.010453412309288979
+              },
+              "recipient_query_id": 71,
+              "source_query_id": 41
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 7395,
+                "sha256": "541503e2bdf19b1b64fadbbcf0ae5ec7ee23b5e40a319c3cbc0a0e2a81a1a3f3"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    71,
+                    41
+                  ],
+                  [
+                    71,
+                    72
+                  ],
+                  [
+                    72,
+                    71
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 74,
+              "source_query_id": 72
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 240,
+              "leader_query_id": 2
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "106ac37c248326b47a28d283aa15874bf1b1f46f6513aed774e0a365ce09d051",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 669,
+                "candidate_pool_mean": [
+                  0.028731553339116103,
+                  15.897528762418236,
+                  0.0003202776456616213
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.05816950109268205,
+                  0.06262567635177696,
+                  0.0004149487109506445
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  1.1238994413588936,
+                  2.619564676012711,
+                  -10.513662394219615
+                ],
+                "target": [
+                  0.039906061572045695,
+                  15.910325050354004,
+                  0.00865872297435999
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 10.89322569240756
+              },
+              "features": {
+                "argmax_coco_class": 3,
+                "hidden_l2_norm": 16.074377059936523,
+                "leader_to_source_attention": 0.004296092316508293,
+                "own_class_score": 0.1052827313542366,
+                "query_id": 15,
+                "target_class_score": 0.028588784858584404,
+                "target_iou": 0.002484775148332119
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 2,
+              "source_query_id": 15
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "74ff77cd1bdb4cd2",
+            "image_sha256": "bae612fd8f07a93fd67d02df54b99d365781323b875321f1e738f751c3d530f5",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 791,
+                "candidate_pool_mean": [
+                  0.006017783122931492,
+                  15.903892975239327,
+                  0.0003610119542936537
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.009025339244879756,
+                  0.062836963651873,
+                  0.00044554643857647137
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  1.3512566757220683,
+                  3.3474766447159787,
+                  -8.595192592855343
+                ],
+                "target": [
+                  0.06729383021593094,
+                  15.910325050354004,
+                  0.00865872297435999
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 9.32249055772532
+              },
+              "features": {
+                "argmax_coco_class": 3,
+                "hidden_l2_norm": 16.120670318603516,
+                "leader_to_source_attention": 0.004829165525734425,
+                "own_class_score": 0.21215760707855225,
+                "query_id": 17,
+                "target_class_score": 0.07948938012123108,
+                "target_iou": 0.008497237227857113
+              },
+              "recipient_query_id": 2,
+              "source_query_id": 17
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 88741,
+                "sha256": "4ec6ff0dc9dcdc1fa52508c0dd89ead5183ee663605717a39128eacafb0bcd95"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    2,
+                    17
+                  ],
+                  [
+                    2,
+                    240
+                  ],
+                  [
+                    240,
+                    2
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 98,
+              "source_query_id": 642
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "2069c0e1871e12524021b05fe5ee26dba5cf0f2242802f08dcf22b44aecf54a0",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 0.7823529,
+            "xmin": 0.0,
+            "ymax": 0.7960089,
+            "ymin": 0.07317073
+          },
+          "coco_id": 9,
+          "coco_name": "boat",
+          "confidence": 1,
+          "label_name": "/m/019jd",
+          "official_bbox_data_row_number": 138443,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "1a92e0f829037e59540948197c065fff9bde5a3484a0622e882a2f28e59eb314",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.6161765,
+            "xmin": 0.57941175,
+            "ymax": 0.52993345,
+            "ymin": 0.46563193
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 138437,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "2cd29297257c8da1bb59b364917995f92fc7ecca580b43e66a0a461851c0442a",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.5058824,
+            "xmin": 0.4882353,
+            "ymax": 0.57427937,
+            "ymin": 0.4745011
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 138435,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "81593f30f963270758662161f3498e8d512828ea60b18b3c15572b54787047f3",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.5897059,
+            "xmin": 0.5382353,
+            "ymax": 0.62527716,
+            "ymin": 0.46119735
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 138436,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "83de73ff05dbfdb7940eb2197ec5cd51b1f7ee3e128e00347889ec2a8d6f7a57",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.6647059,
+            "xmin": 0.62058824,
+            "ymax": 0.62305987,
+            "ymin": 0.4855876
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 138438,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "2069c0e1871e12524021b05fe5ee26dba5cf0f2242802f08dcf22b44aecf54a0",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 0,
+          "is_truncated": 1
+        },
+        "bbox": {
+          "xmax": 0.7823529,
+          "xmin": 0.0,
+          "ymax": 0.7960089,
+          "ymin": 0.07317073
+        },
+        "candidate_count": 5,
+        "coco_id": 9,
+        "coco_name": "boat",
+        "confidence": 1,
+        "label_name": "/m/019jd",
+        "official_bbox_data_row_number": 138443,
+        "selection_hash": "04bee7bfb74374304b88d7fd402bbbb22c63dd5d4cf4319ee9dcf8fe0768f0a7",
+        "source": "xclick"
+      },
+      "stratum": "n5plus|ordinary_only|small"
+    },
+    {
+      "image_id": "b81a60cde0e9d78f",
+      "image_sha256": "f98b7c7417349ab951a46a2dbb868d424a6c93be6e4240ce49eed256f9f5c921",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 98,
+              "leader_query_id": 71
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "c109dfad9a6f0df9de4d42de73c398fe7452a6e0acc29461204c0a6e23d8aff9",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 92,
+                "candidate_pool_mean": [
+                  0.34274028270485124,
+                  16.771868311840556,
+                  0.005014707550720271
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.32704959255192084,
+                  0.27117993512337535,
+                  0.003601000413020976
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  3.0293934152828355,
+                  2.440862439876601,
+                  -4.3875855807779764
+                ],
+                "target": [
+                  0.006615751900738723,
+                  16.235408782958984,
+                  0.03688660264015198
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 5.863952689407561
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.897321701049805,
+                "leader_to_source_attention": 0.021086905151605606,
+                "own_class_score": 0.9973776340484619,
+                "query_id": 45,
+                "target_class_score": 4.354733391664922e-06,
+                "target_iou": 0.015937400981783867
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 71,
+              "source_query_id": 45
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "b81a60cde0e9d78f",
+            "image_sha256": "f98b7c7417349ab951a46a2dbb868d424a6c93be6e4240ce49eed256f9f5c921",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 95,
+                "candidate_pool_mean": [
+                  0.003413934660712632,
+                  16.772705559981496,
+                  0.005216340562573781
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.02027849967226908,
+                  0.267483121367678,
+                  0.004122791324106811
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.3945698873978313,
+                  2.4979572123860114,
+                  -2.745394190429959
+                ],
+                "target": [
+                  0.008006660267710686,
+                  16.235408782958984,
+                  0.03688660264015198
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 3.7326485090079133
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.9035701751709,
+                "leader_to_source_attention": 0.0255679152905941,
+                "own_class_score": 0.9967905879020691,
+                "query_id": 61,
+                "target_class_score": 5.374935426516458e-06,
+                "target_iou": 0.028594503179192543
+              },
+              "recipient_query_id": 71,
+              "source_query_id": 61
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 7071,
+                "sha256": "f5ed8478402710cab9334157149353bc7b293bbf46d4a755fd142fd4d97e6715"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    71,
+                    61
+                  ],
+                  [
+                    71,
+                    98
+                  ],
+                  [
+                    98,
+                    71
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 71,
+              "source_query_id": 42
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 35,
+              "leader_query_id": 15
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "59f1b45c27eb640bada54db8b8dfcc53496db0879c11b607728d0c1165c4bfa9",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 820,
+                "candidate_pool_mean": [
+                  0.050693561094841445,
+                  15.892544690574088,
+                  0.0006609047788160529
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.08347699389586899,
+                  0.06614806321001003,
+                  0.0007869732091732845
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  8.813665936689985,
+                  1.4256082367142147,
+                  -112.50524786906395
+                ],
+                "target": [
+                  0.08359622899587185,
+                  15.827733039855957,
+                  0.09720201790332794
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 112.85895562235048
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 15.92203426361084,
+                "leader_to_source_attention": 0.008663401938974857,
+                "own_class_score": 0.8193345665931702,
+                "query_id": 2,
+                "target_class_score": 0.007400614209473133,
+                "target_iou": 0.011788950301706791
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 15,
+              "source_query_id": 2
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "b81a60cde0e9d78f",
+            "image_sha256": "f98b7c7417349ab951a46a2dbb868d424a6c93be6e4240ce49eed256f9f5c921",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 886,
+                "candidate_pool_mean": [
+                  0.008938471265551744,
+                  15.89213002077882,
+                  0.0006813194740478356
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.021635404001404363,
+                  0.0651600825200245,
+                  0.000892230027099235
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -3.381324361798341,
+                  0.6646586384792802,
+                  -94.26074537399121
+                ],
+                "target": [
+                  0.0850273072719574,
+                  15.827733039855957,
+                  0.09720201790332794
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 94.3237151728334
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 15.871042251586914,
+                "leader_to_source_attention": 0.013099750503897667,
+                "own_class_score": 0.8574855327606201,
+                "query_id": 0,
+                "target_class_score": 0.01187098864465952,
+                "target_iou": 0.00963102001696825
+              },
+              "recipient_query_id": 15,
+              "source_query_id": 0
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 289725,
+                "sha256": "c5bd1abd681644426ca2eff1af9b1c678e76c39f06028e94daf9a10df32f1c02"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    15,
+                    35
+                  ],
+                  [
+                    35,
+                    15
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 322,
+              "source_query_id": 250
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "6d660ce27415369eb83cf756e5ce85ebb48c7b3cd3bc48a7da78313cfbf9ae06",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.9795082,
+            "xmin": 0.058743168,
+            "ymax": 0.98806685,
+            "ymin": 0.19809069
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 219322,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "0d5deb45d0701a044cc9266b450738b838fa8ce31250dc6ff760dc178ea3cb9a",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 1.0,
+            "xmin": 0.9453552,
+            "ymax": 0.57995224,
+            "ymin": 0.2601432
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 219325,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "8dd49730d2a461e54cbecfbb6d4e36237d616fadfd5e5b61a2a6e7c9c1d8c887",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 1,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 0.39480874,
+            "xmin": 0.0,
+            "ymax": 0.6491647,
+            "ymin": 0.22195704
+          },
+          "coco_id": 1,
+          "coco_name": "person",
+          "confidence": 1,
+          "label_name": "/m/01g317",
+          "official_bbox_data_row_number": 219324,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "c64f854f82e7f4d93730641c55ab74d0a34819b77edc4004b2a96a0ea6a5947d",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 0,
+            "is_occluded": 1,
+            "is_truncated": 1
+          },
+          "bbox": {
+            "xmax": 0.32103825,
+            "xmin": 0.19535519,
+            "ymax": 0.43675417,
+            "ymin": 0.29116946
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 219323,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "6d660ce27415369eb83cf756e5ce85ebb48c7b3cd3bc48a7da78313cfbf9ae06",
+        "attributes": {
+          "is_depiction": 0,
+          "is_group_of": 0,
+          "is_inside": 0,
+          "is_occluded": 0,
+          "is_truncated": 0
+        },
+        "bbox": {
+          "xmax": 0.9795082,
+          "xmin": 0.058743168,
+          "ymax": 0.98806685,
+          "ymin": 0.19809069
+        },
+        "candidate_count": 4,
+        "coco_id": 3,
+        "coco_name": "car",
+        "confidence": 1,
+        "label_name": "/m/0k4j",
+        "official_bbox_data_row_number": 219322,
+        "selection_hash": "33b53f92b7a670cae3b9fe3fe79368b9187226480fa91d90917dec4e30edd718",
+        "source": "xclick"
+      },
+      "stratum": "n2_4|has_groupof|medium"
+    },
+    {
+      "image_id": "2ea75b1505202d08",
+      "image_sha256": "906b1d3e4281b0e8e0cdb679da52eadbf4cf8195d2d9a0d167f72113b228a175",
+      "models": {
+        "detr_r50_500": {
+          "baseline": {
+            "eligible": true,
+            "family": "detr",
+            "pair": {
+              "competitor_query_id": 50,
+              "leader_query_id": 8
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "d6d54a8558927124b8fd28ef25d005d803bd87b24762d98fcd63c50c633f70f6",
+            "baseline_row_sha256": "7e2ad7b683708a68e4a7384c4ba741e0a0fc086dab29b17d129b1a130908eddf",
+            "checkpoint_id": "detr_r50_500",
+            "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 39,
+                "candidate_pool_mean": [
+                  2.1773970321448407e-05,
+                  16.284808012155388,
+                  0.005764796667230817
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  2.4312363933953523e-05,
+                  0.23165763425371688,
+                  0.003604916154881985
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -87.40286278711605,
+                  1.963125241625631,
+                  -15.402182352254071
+                ],
+                "target": [
+                  0.0022531944245364386,
+                  16.09816551208496,
+                  0.05760081484913826
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 88.77128761773048
+              },
+              "features": {
+                "argmax_coco_class": 8,
+                "hidden_l2_norm": 16.55293846130371,
+                "leader_to_source_attention": 0.00207723886705935,
+                "own_class_score": 0.00012822421558666974,
+                "query_id": 66,
+                "target_class_score": 0.00011211744276806712,
+                "target_iou": 0.002865087240934372
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 8,
+              "source_query_id": 66
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "2ea75b1505202d08",
+            "image_sha256": "906b1d3e4281b0e8e0cdb679da52eadbf4cf8195d2d9a0d167f72113b228a175",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 87,
+                "candidate_pool_mean": [
+                  0.010159702945310514,
+                  16.365730910465636,
+                  0.007079049389563158
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.09376754412428158,
+                  0.21407373127535828,
+                  0.004149108689757833
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.07139813486444986,
+                  1.5038808069277583,
+                  -9.109732066881227
+                ],
+                "target": [
+                  0.006695709191262722,
+                  16.09816551208496,
+                  0.05760081484913826
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 9.23330783118769
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 16.420106887817383,
+                "leader_to_source_attention": 0.019803546369075775,
+                "own_class_score": 4.426687155500986e-06,
+                "query_id": 52,
+                "target_class_score": 8.814299690129701e-07,
+                "target_iou": 0.0
+              },
+              "recipient_query_id": 8,
+              "source_query_id": 52
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 9897,
+                "rank": 7067,
+                "sha256": "ed0b12da73efb763d9957accfcc72e58dfb60948b616766ff6d5ba030b3d237a"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    8,
+                    50
+                  ],
+                  [
+                    8,
+                    52
+                  ],
+                  [
+                    50,
+                    8
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 71,
+              "source_query_id": 41
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        },
+        "dino_r50_4s_12e": {
+          "baseline": {
+            "eligible": true,
+            "family": "dino",
+            "pair": {
+              "competitor_query_id": 363,
+              "leader_query_id": 25
+            }
+          },
+          "controls": {
+            "baseline_eligible": true,
+            "baseline_receipt_sha256": "a49e9a432620bd0fd09580b56890ac79417d3b9b500b33e374c7c921664a2847",
+            "baseline_row_sha256": "7994b3c9b9e65d60d920f71a333fa44496f91353a703e7bc3be35ff215026954",
+            "checkpoint_id": "dino_r50_4s_12e",
+            "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+            "control_feasible": true,
+            "control_ineligibility_reason": null,
+            "different_object": {
+              "distances": {
+                "candidate_count": 432,
+                "candidate_pool_mean": [
+                  0.01416136367630248,
+                  15.879134301786069,
+                  0.0009926084489224937
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.02923389713198981,
+                  0.05379601069068504,
+                  0.0034971385937808343
+                ],
+                "fields": [
+                  "own_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  0.09575389235997853,
+                  0.1271600957720555,
+                  -0.20525075356406863
+                ],
+                "target": [
+                  0.006033936574926641,
+                  15.847825050354004,
+                  0.0031983815133571625
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 0.2597428915244125
+              },
+              "features": {
+                "argmax_coco_class": 1,
+                "hidden_l2_norm": 15.854665756225586,
+                "leader_to_source_attention": 0.002480591181665659,
+                "own_class_score": 0.008833196014165878,
+                "query_id": 715,
+                "target_class_score": 0.005415568593889475,
+                "target_iou": 0.0
+              },
+              "operationalization": "baseline-predicted different object; no second exact-MID annotation required",
+              "recipient_query_id": 25,
+              "source_query_id": 715
+            },
+            "eligible": true,
+            "feature_rule_id": "m1-control-feature-match-v1",
+            "image_id": "2ea75b1505202d08",
+            "image_sha256": "906b1d3e4281b0e8e0cdb679da52eadbf4cf8195d2d9a0d167f72113b228a175",
+            "intervention_outputs_read": false,
+            "matched_sham": {
+              "distances": {
+                "candidate_count": 858,
+                "candidate_pool_mean": [
+                  0.010568180966272675,
+                  15.887892136206993,
+                  0.0008590003350589897
+                ],
+                "candidate_pool_population_sd_floor_1e-12": [
+                  0.025685693142941803,
+                  0.053543585352244995,
+                  0.0038474002456184405
+                ],
+                "fields": [
+                  "target_class_score",
+                  "hidden_l2_norm",
+                  "leader_to_source_attention"
+                ],
+                "standardized_deltas": [
+                  -0.017033044068432573,
+                  -0.13556087390146418,
+                  -0.2154932979062154
+                ],
+                "target": [
+                  0.01778413914144039,
+                  15.847825050354004,
+                  0.0031983815133571625
+                ],
+                "tie_break": "minimum_source_query_id",
+                "zscore_l2": 0.25515531851337675
+              },
+              "features": {
+                "argmax_coco_class": 3,
+                "hidden_l2_norm": 15.840566635131836,
+                "leader_to_source_attention": 0.0023692925460636616,
+                "own_class_score": 0.017346633598208427,
+                "query_id": 420,
+                "target_class_score": 0.017346633598208427,
+                "target_iou": 0.03272387385368347
+              },
+              "recipient_query_id": 25,
+              "source_query_id": 420
+            },
+            "protocol_id": "future-qc-iclr-m1-cross-checkpoint-v1",
+            "protocol_sha256": "0f1d599b6bd35006cb4f5def75c8d842d4255db32c660c3bbfe511e770d35107",
+            "random_edge": {
+              "distances": {
+                "kind": "fixed_seed_sha256_modulo_ordered_pool",
+                "pool_size": 809097,
+                "rank": 228577,
+                "sha256": "df199c1aa833ed928fb9dc660253f17ec5a7383ac9b02e5644d5067dad88f0f5"
+              },
+              "features": {
+                "excluded_edges": [
+                  [
+                    25,
+                    363
+                  ],
+                  [
+                    25,
+                    420
+                  ],
+                  [
+                    363,
+                    25
+                  ]
+                ],
+                "ordered_pool": "recipient_query_id_then_source_query_id"
+              },
+              "recipient_query_id": 254,
+              "source_query_id": 233
+            },
+            "schema": "fq.iclr.m1.control_pair_receipt.v2",
+            "scientific_effect_readout": false,
+            "selection_source": "FROZEN_BASELINE_ONLY",
+            "status": "FROZEN_CONTROL_PAIRS",
+            "supplement_config_sha256": "23fe5044bc32de59cc6e47469b7fbf25e439355e9060c87a158448d1998afa19",
+            "supplement_id": "future-qc-iclr-m1-control-pair-supplement-v2"
+          }
+        }
+      },
+      "objects_primary_first": [
+        {
+          "annotation_id": "56087dbab9a920181592b6dcb7270d70efa46d1c14fd291639977a1992fbe836",
+          "attributes": {
+            "is_depiction": 1,
+            "is_group_of": 0,
+            "is_inside": 1,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 0.3364865,
+            "xmin": 0.2891892,
+            "ymax": 0.23429951,
+            "ymin": 0.18599033
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 55398,
+          "source": "xclick"
+        },
+        {
+          "annotation_id": "f98fc66f9de16e97891060decad310e528694ebb7479b76f72fa3a02f3b4ff1f",
+          "attributes": {
+            "is_depiction": 0,
+            "is_group_of": 0,
+            "is_inside": 1,
+            "is_occluded": 0,
+            "is_truncated": 0
+          },
+          "bbox": {
+            "xmax": 1.0,
+            "xmin": 0.0,
+            "ymax": 1.0,
+            "ymin": 0.0
+          },
+          "coco_id": 3,
+          "coco_name": "car",
+          "confidence": 1,
+          "label_name": "/m/0k4j",
+          "official_bbox_data_row_number": 55397,
+          "source": "xclick"
+        }
+      ],
+      "primary_object": {
+        "annotation_id": "56087dbab9a920181592b6dcb7270d70efa46d1c14fd291639977a1992fbe836",
+        "attributes": {
+          "is_depiction": 1,
+          "is_group_of": 0,
+          "is_inside": 1,
+          "is_occluded": 0,
+          "is_truncated": 0
+        },
+        "bbox": {
+          "xmax": 0.3364865,
+          "xmin": 0.2891892,
+          "ymax": 0.23429951,
+          "ymin": 0.18599033
+        },
+        "candidate_count": 2,
+        "coco_id": 3,
+        "coco_name": "car",
+        "confidence": 1,
+        "label_name": "/m/0k4j",
+        "official_bbox_data_row_number": 55398,
+        "selection_hash": "15da727172041ff9b6b3d8b5c0ba284431392636916e8341a7c327d24e0c7a31",
+        "source": "xclick"
+      },
+      "stratum": "n2_4|ordinary_only|large"
+    }
+  ],
+  "schema_version": "fq.iclr.transport.t0b_r_pilot_manifest.v1",
+  "scientific_outcome_capture_allowed": false,
+  "selection": "first hash-frozen N1 rows with cross-model eligible controls",
+  "split": "R",
+  "status": "PASS_T0B_R_PILOT_MANIFEST"
+}

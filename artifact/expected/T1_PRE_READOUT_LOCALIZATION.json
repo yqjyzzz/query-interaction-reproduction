@@ -1,0 +1,194 @@
+{
+  "schema_version": "fq.iclr.transport.t1_localization.v1",
+  "status": "T1_PRE_READOUT_DIFFERENCE",
+  "config_sha256": "d5bc70623f1c9593f5db40674388b48b4e239d95b77a100f07ff3abfc5ea1d62",
+  "mapping_sha256": "bc811fa7d038bfdf03f3be6efc552f74d4de4e1ad09c86ccb5518ba99b30a503",
+  "hard_integrity_sha256": "5c09a12912fb8c40b543b313b52b58d1769bcb531543e91a88662a957abe613c",
+  "mass_integrity_sha256": "f67a116558ea8736033c60c7629400eaf94e4c10a0978321f4363265224f034a",
+  "equivalence_margin": 0.0001,
+  "bootstrap_draws": 10000,
+  "models": {
+    "detr_r50_500": {
+      "n": 710,
+      "simultaneous_critical_value": 2.72003722783169,
+      "pre_readout_difference": true,
+      "readout_specific_difference": false,
+      "all_endpoints_equivalent": false,
+      "summaries": {
+        "local": {
+          "mean": 0.08116878926910472,
+          "median": 0.0017031564635439362,
+          "simultaneous_95": [
+            0.06009602859894206,
+            0.10224154993926737
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "focal": {
+          "mean": 0.00011097582953039927,
+          "median": 0.0,
+          "simultaneous_95": [
+            -9.016076102643518e-05,
+            0.00031211242008723374
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "spillover": {
+          "mean": -0.005091478612755852,
+          "median": -1.7802891490947825e-05,
+          "simultaneous_95": [
+            -0.009011302956213921,
+            -0.0011716542692977831
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "fixed": {
+          "mean": -0.004980502783225456,
+          "median": -1.7361758689049545e-05,
+          "simultaneous_95": [
+            -0.008902409789650763,
+            -0.0010585957768001492
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "matching": {
+          "mean": 0.003379329793934838,
+          "median": 0.0,
+          "simultaneous_95": [
+            -0.0005931725875170861,
+            0.0073518321753867615
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "rematched": {
+          "mean": -0.0016011729892906163,
+          "median": -1.2757428789193781e-05,
+          "simultaneous_95": [
+            -0.0038130229120224143,
+            0.0006106769334411819
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "selection": {
+          "mean": -0.00019757726857502566,
+          "median": 0.0,
+          "simultaneous_95": [
+            -0.0006196734023638261,
+            0.0002245188652137748
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "native": {
+          "mean": -0.0017987502578656438,
+          "median": -1.1957691392838754e-05,
+          "simultaneous_95": [
+            -0.0039651360725404565,
+            0.0003676355568091689
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        }
+      }
+    },
+    "dino_r50_4s_12e": {
+      "n": 710,
+      "simultaneous_critical_value": 2.6176777441150927,
+      "pre_readout_difference": true,
+      "readout_specific_difference": false,
+      "all_endpoints_equivalent": false,
+      "summaries": {
+        "local": {
+          "mean": 0.03481734774266898,
+          "median": 0.01002028825807616,
+          "simultaneous_95": [
+            0.029719018790693004,
+            0.03991567669464496
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "focal": {
+          "mean": 4.604275981184674e-05,
+          "median": 0.0,
+          "simultaneous_95": [
+            -1.8944993850719082e-05,
+            0.00011103051347441256
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "spillover": {
+          "mean": -0.007747454866762331,
+          "median": -0.00027773496270788733,
+          "simultaneous_95": [
+            -0.011273507413795021,
+            -0.004221402319729641
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "fixed": {
+          "mean": -0.007701412106950487,
+          "median": -0.0002600952239599566,
+          "simultaneous_95": [
+            -0.011228682055542904,
+            -0.00417414215835807
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "matching": {
+          "mean": 0.0011401372218337335,
+          "median": 0.0,
+          "simultaneous_95": [
+            -1.4665357689128827e-05,
+            0.002294939801356596
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "rematched": {
+          "mean": -0.0065612748851167566,
+          "median": -0.00023847842112051376,
+          "simultaneous_95": [
+            -0.009366688798489106,
+            -0.0037558609717444065
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        },
+        "selection": {
+          "mean": -1.0078168630484297e-05,
+          "median": 0.0,
+          "simultaneous_95": [
+            -0.00010624299287750091,
+            8.608665561653231e-05
+          ],
+          "difference_outside_margin": false,
+          "equivalent_within_margin": false
+        },
+        "native": {
+          "mean": -0.0065713530537472396,
+          "median": -0.00024347465678370428,
+          "simultaneous_95": [
+            -0.009377094639131462,
+            -0.0037656114683630166
+          ],
+          "difference_outside_margin": true,
+          "equivalent_within_margin": false
+        }
+      }
+    }
+  },
+  "next_route": "T2_MESSAGE_RENORMALIZATION_REDISTRIBUTION",
+  "scientific_effect_readout": true,
+  "new_model_inference": false,
+  "V_F_read": false
+}

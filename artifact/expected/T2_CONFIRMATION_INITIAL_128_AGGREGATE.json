@@ -1,0 +1,523 @@
+{
+  "schema_version": "fq.iclr.transport.t2_confirmation_initial_aggregate.v1",
+  "status": "T2_INCONCLUSIVE_PRECISION",
+  "config_sha256": "310890b16df8c2270481e072babdc4454d57a76681dba0b32aac8702c95331a9",
+  "execution_sha256": "b5eaa68f235d7a989f7b9b20557e2795c62d93bffd1f7b2fcf2912fdd8f591ae",
+  "integrity_sha256": "fad35d479f2492d0592fd4f73b459d014c4f81339cdff55f5b583adf54d644d4",
+  "mapping_sha256": "239d110b124b122beceead52c98fe37e990881678a83e98f84498f5a17f04f48",
+  "bootstrap_draws": 10000,
+  "models": {
+    "detr_r50_500": {
+      "n": 128,
+      "simultaneous_critical_value": 2.1296488736497245,
+      "positive_control_pass": false,
+      "endpoint_classes": {
+        "local": [],
+        "spillover": [],
+        "fixed": []
+      },
+      "contrasts": {
+        "M_MINUS_P_local": {
+          "estimate": -2.0440093943256864e-05,
+          "simultaneous_95": [
+            -6.356318693335886e-05,
+            2.268299904684513e-05
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 4.3123092990101994e-05
+        },
+        "M_MINUS_P_spillover": {
+          "estimate": -4.672604102341232e-06,
+          "simultaneous_95": [
+            -1.3285976022732323e-05,
+            3.940767818049859e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 8.613371920391091e-06
+        },
+        "M_MINUS_P_fixed": {
+          "estimate": -4.673338808361049e-06,
+          "simultaneous_95": [
+            -1.3286567644987013e-05,
+            3.9398900282649155e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 8.613228836625964e-06
+        },
+        "M_MINUS_D_local": {
+          "estimate": 0.00030546897711864493,
+          "simultaneous_95": [
+            -0.0003416048786163171,
+            0.000952542832853607
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.000647073855734962
+        },
+        "M_MINUS_D_spillover": {
+          "estimate": -0.00010040134962287139,
+          "simultaneous_95": [
+            -0.00031355660624084956,
+            0.00011275390699510678
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.00021315525661797817
+        },
+        "M_MINUS_D_fixed": {
+          "estimate": -0.00010040413515773363,
+          "simultaneous_95": [
+            -0.00031355892948103605,
+            0.00011275065916556877
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002131547943233024
+        },
+        "P_MINUS_D_local": {
+          "estimate": 0.0003259090710619018,
+          "simultaneous_95": [
+            -0.000364284799508673,
+            0.0010161029416324765
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0006901938705705748
+        },
+        "P_MINUS_D_spillover": {
+          "estimate": -9.572874552053012e-05,
+          "simultaneous_95": [
+            -0.00030041331327434914,
+            0.00010895582223328889
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.000204684567753819
+        },
+        "P_MINUS_D_fixed": {
+          "estimate": -9.573079634937255e-05,
+          "simultaneous_95": [
+            -0.0003004150469265009,
+            0.00010895345422775579
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.00020468425057712834
+        },
+        "M_MINUS_BASELINE_local": {
+          "estimate": 0.00033629304384442043,
+          "simultaneous_95": [
+            -0.0003651087603023173,
+            0.0010376948479911582
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0007014018041467377
+        },
+        "M_MINUS_BASELINE_spillover": {
+          "estimate": -0.00011205581385089813,
+          "simultaneous_95": [
+            -0.00034665461255739153,
+            0.00012254298485559525
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002345987987064934
+        },
+        "M_MINUS_BASELINE_fixed": {
+          "estimate": -0.00011205649076977463,
+          "simultaneous_95": [
+            -0.0003466550117248145,
+            0.0001225420301852652
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.00023459852095503985
+        },
+        "P_MINUS_BASELINE_local": {
+          "estimate": 0.00035673313778767746,
+          "simultaneous_95": [
+            -0.0003877849139385908,
+            0.0011012511895139457
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0007445180517262682
+        },
+        "P_MINUS_BASELINE_spillover": {
+          "estimate": -0.0001073832097485568,
+          "simultaneous_95": [
+            -0.0003334892612598613,
+            0.0001187228417627477
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002261060515113045
+        },
+        "P_MINUS_BASELINE_fixed": {
+          "estimate": -0.00010738315196141349,
+          "simultaneous_95": [
+            -0.00033348907051192905,
+            0.0001187227665891021
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002261059185505156
+        },
+        "D_MINUS_BASELINE_local": {
+          "estimate": 3.082406672577545e-05,
+          "simultaneous_95": [
+            -2.4385372251491396e-05,
+            8.60335057030423e-05
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 5.520943897726685e-05
+        },
+        "D_MINUS_BASELINE_spillover": {
+          "estimate": -1.1654464228026787e-05,
+          "simultaneous_95": [
+            -3.332939582716996e-05,
+            1.0020467371116391e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 2.1674931599143178e-05
+        },
+        "D_MINUS_BASELINE_fixed": {
+          "estimate": -1.1652355612041046e-05,
+          "simultaneous_95": [
+            -3.332748158995391e-05,
+            1.002277036587182e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 2.1675125977912867e-05
+        },
+        "H_MINUS_BASELINE_local": {
+          "estimate": 0.0011417496946891281,
+          "simultaneous_95": [
+            -0.0012464244157958054,
+            0.003529923805174062
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0023881741104849336
+        },
+        "H_MINUS_BASELINE_spillover": {
+          "estimate": -0.00027129495248967876,
+          "simultaneous_95": [
+            -0.0008416347455696267,
+            0.0002990448405902692
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.000570339793079948
+        },
+        "H_MINUS_BASELINE_fixed": {
+          "estimate": -0.000271296130668978,
+          "simultaneous_95": [
+            -0.0008416355212111111,
+            0.00029904325987315514
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0005703393905421331
+        },
+        "H_MINUS_P_CONTINUITY_local": {
+          "estimate": 0.0006728833903382561,
+          "simultaneous_95": [
+            -0.0007242969056365561,
+            0.0020700636863130685
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0013971802959748124
+        },
+        "H_MINUS_P_CONTINUITY_spillover": {
+          "estimate": -0.0001280015505466279,
+          "simultaneous_95": [
+            -0.0003952741712639822,
+            0.00013927107017072638
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002672726207173543
+        },
+        "H_MINUS_P_CONTINUITY_fixed": {
+          "estimate": -0.0001280039271514883,
+          "simultaneous_95": [
+            -0.000395276275985726,
+            0.00013926842168274938
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 0.0002672723488342377
+        }
+      }
+    },
+    "dino_r50_4s_12e": {
+      "n": 128,
+      "simultaneous_critical_value": 3.030898081985557,
+      "positive_control_pass": false,
+      "endpoint_classes": {
+        "local": [],
+        "spillover": [],
+        "fixed": []
+      },
+      "contrasts": {
+        "M_MINUS_P_local": {
+          "estimate": -9.532387574607299e-05,
+          "simultaneous_95": [
+            -0.00026467647019559886,
+            7.402871870345289e-05
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.00016935259444952587
+        },
+        "M_MINUS_P_spillover": {
+          "estimate": -1.5102705752230257e-06,
+          "simultaneous_95": [
+            -5.111790970655563e-06,
+            2.0912498202095113e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 3.601520395432537e-06
+        },
+        "M_MINUS_P_fixed": {
+          "estimate": -6.258348320501498e-07,
+          "simultaneous_95": [
+            -5.387219602543691e-06,
+            4.135549938443392e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 4.761384770493542e-06
+        },
+        "M_MINUS_D_local": {
+          "estimate": 2.4538297526963032e-05,
+          "simultaneous_95": [
+            -0.00017342572230639495,
+            0.000222502317360321
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.00019796401983335798
+        },
+        "M_MINUS_D_spillover": {
+          "estimate": -1.716524578739769e-06,
+          "simultaneous_95": [
+            -6.921124465940647e-06,
+            3.4880753084611094e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 5.204599887200878e-06
+        },
+        "M_MINUS_D_fixed": {
+          "estimate": -2.3531108031261245e-07,
+          "simultaneous_95": [
+            -7.390406328684169e-06,
+            6.9197841680589446e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 7.155095248371557e-06
+        },
+        "P_MINUS_D_local": {
+          "estimate": 0.00011986217327303607,
+          "simultaneous_95": [
+            -8.03798789407881e-05,
+            0.00032010422548686023
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.00020024205221382416
+        },
+        "P_MINUS_D_spillover": {
+          "estimate": -2.062540035167422e-07,
+          "simultaneous_95": [
+            -4.764220865971926e-06,
+            4.351712858938442e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 4.557966862455184e-06
+        },
+        "P_MINUS_D_fixed": {
+          "estimate": 3.905237517375377e-07,
+          "simultaneous_95": [
+            -4.50569315858884e-06,
+            5.286740662063916e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 4.896216910326378e-06
+        },
+        "M_MINUS_BASELINE_local": {
+          "estimate": 0.00022796358273910147,
+          "simultaneous_95": [
+            -0.00018091655481121388,
+            0.0006368437202894169
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.00040888013755031535
+        },
+        "M_MINUS_BASELINE_spillover": {
+          "estimate": -3.4999009733733177e-06,
+          "simultaneous_95": [
+            -8.630160049628134e-06,
+            1.6303581028814995e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 5.130259076254817e-06
+        },
+        "M_MINUS_BASELINE_fixed": {
+          "estimate": -4.259474701767528e-06,
+          "simultaneous_95": [
+            -9.762831348131018e-06,
+            1.2438819445959612e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 5.50335664636349e-06
+        },
+        "P_MINUS_BASELINE_local": {
+          "estimate": 0.00032328745848517464,
+          "simultaneous_95": [
+            -2.9457669301355697e-05,
+            0.000676032586271705
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0003527451277865304
+        },
+        "P_MINUS_BASELINE_spillover": {
+          "estimate": -1.989630398150291e-06,
+          "simultaneous_95": [
+            -7.692806942793109e-06,
+            3.713546146492526e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 5.703176544642817e-06
+        },
+        "P_MINUS_BASELINE_fixed": {
+          "estimate": -3.6336398697173767e-06,
+          "simultaneous_95": [
+            -1.1348490315925499e-05,
+            4.0812105764907466e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 7.714850446208123e-06
+        },
+        "D_MINUS_BASELINE_local": {
+          "estimate": 0.0002034252852121385,
+          "simultaneous_95": [
+            -6.664972494652068e-05,
+            0.00047350029537079766
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.00027007501015865917
+        },
+        "D_MINUS_BASELINE_spillover": {
+          "estimate": -1.783376394633549e-06,
+          "simultaneous_95": [
+            -7.588452116152648e-06,
+            4.02169932688555e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 5.805075721519099e-06
+        },
+        "D_MINUS_BASELINE_fixed": {
+          "estimate": -4.024163621454915e-06,
+          "simultaneous_95": [
+            -1.3105135728056504e-05,
+            5.056808485146675e-06
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 9.08097210660159e-06
+        },
+        "H_MINUS_BASELINE_local": {
+          "estimate": 0.0011047005042777473,
+          "simultaneous_95": [
+            -0.00019223893541446936,
+            0.002401639943969964
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0012969394396922167
+        },
+        "H_MINUS_BASELINE_spillover": {
+          "estimate": -5.92207366684863e-06,
+          "simultaneous_95": [
+            -3.0397978527548622e-05,
+            1.855383119385136e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 2.447590486069999e-05
+        },
+        "H_MINUS_BASELINE_fixed": {
+          "estimate": -8.971212736939162e-06,
+          "simultaneous_95": [
+            -3.5504278782642754e-05,
+            1.7561853308764435e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 2.6533066045703593e-05
+        },
+        "H_MINUS_P_CONTINUITY_local": {
+          "estimate": 0.0002021346191630643,
+          "simultaneous_95": [
+            -0.0003439363918344013,
+            0.0007482056301605299
+          ],
+          "band": 0.005,
+          "state": "EQUIVALENT",
+          "half_width": 0.0005460710109974656
+        },
+        "H_MINUS_P_CONTINUITY_spillover": {
+          "estimate": -6.571877642179526e-06,
+          "simultaneous_95": [
+            -2.5747478398710772e-05,
+            1.2603723114351722e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 1.9175600756531248e-05
+        },
+        "H_MINUS_P_CONTINUITY_fixed": {
+          "estimate": -8.79096424521702e-06,
+          "simultaneous_95": [
+            -2.9319728847353495e-05,
+            1.1737800356919455e-05
+          ],
+          "band": 0.001,
+          "state": "EQUIVALENT",
+          "half_width": 2.0528764602136475e-05
+        }
+      }
+    }
+  },
+  "positive_control_pass": false,
+  "supported_mechanism_classes": [],
+  "all_pairwise_equivalent": true,
+  "precision_extension_required": false,
+  "precision_extension_authorized": false,
+  "precision_extension_reasons": [],
+  "scientific_effect_readout": true,
+  "V_F_read": false
+}

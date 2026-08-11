@@ -1,0 +1,25 @@
+{
+  "schema_version": "fq.iclr.transport.t0b_integrity.v1",
+  "status": "PASS_T0B_D_BASELINE_CAPTURE",
+  "config_sha256": "708cbc733bba57d956f28736ff705c35faf4f350d23d5fc1e632965e24da505e",
+  "models": {
+    "detr_r50_500": {
+      "receipt_count": 710,
+      "unique_images": 710,
+      "maximum_baseline_repeat_error": 0.0,
+      "maximum_analytic_swap_weight_error": 0.0,
+      "maximum_analytic_message_error": 0.0
+    },
+    "dino_r50_4s_12e": {
+      "receipt_count": 710,
+      "unique_images": 710,
+      "maximum_baseline_repeat_error": 0.0,
+      "maximum_analytic_swap_weight_error": 0.0,
+      "maximum_analytic_message_error": 0.0
+    }
+  },
+  "aggregation_allowed": true,
+  "scientific_outcome_captured": false,
+  "scientific_effect_readout": false,
+  "V_F_read": false
+}

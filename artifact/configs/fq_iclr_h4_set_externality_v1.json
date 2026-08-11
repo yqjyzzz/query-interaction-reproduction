@@ -1,0 +1,88 @@
+{
+  "schema_version": "fq.iclr.h4.set_externality.v1",
+  "protocol_id": "future-qc-iclr-h4-set-externality-v1",
+  "status": "ACK_RECEIVED_PHASE0_OPEN_D_INTERVENTION_CLOSED_PENDING_IMPLEMENTATION_LOCKS",
+  "external_protocol_locks": {
+    "reviewer_readiness_sha256": "548b8530ad392345380cfc5efc0fe47515822a2b04ceaf0c3c505baf493e346e",
+    "post_n1_retrospective_sha256": "bfa04d4248bb3ea6b90bda02bd630753334b35a318f5e021d15ac0d671a4347d",
+    "preregistration_sha256": "186398361a4f7342636cb0e60944ee8291b1dc8ace69b77a3133750bf38f9bfb",
+    "machine_protocol_sha256": "4e891623c77a94c837e7cbb0e437c35ec66914eea84d32ccce9217f9ac8fd496",
+    "transport_blueprint_sha256": "350d836dbb2d3270a3ba5524accb13b178f4b8e281e2c734d49225482b9c473a"
+  },
+  "historical_locks": {
+    "n1_final_gate": [
+      "artifacts/iclr_n1/N1_FINAL_GATE.json",
+      "7f32c5547f45610e8ddaf6a62547bcbb8c479a8167454b02067cdcd7b077e056"
+    ],
+    "n1_aggregate": [
+      "artifacts/iclr_n1/N1_MECHANISM_AGGREGATE.json",
+      "344ee8d5ace315576d98524417fab1df7b8fccd6755312c58a536c0bca8fbe9d"
+    ],
+    "rdvf_manifest": [
+      "artifacts/iclr_m1/r_amendment_v1/EXTERNAL_RDVF_SPLIT_MANIFEST_R_AMENDMENT_V1.json",
+      "24894ec4efd30ad509ff9f186a80c066e005c4ff8de0666110956658434a71fe"
+    ],
+    "estimand_library": [
+      "src/future_qc/iclr_h4/estimands.py",
+      "6758fd693a8b6cae4012bfe4f36eeb6aa501c50b51f476f5c483eec166c4068a"
+    ]
+  },
+  "models": {
+    "detr_r50_500": {
+      "family": "detr",
+      "checkpoint_path": "checkpoints/iclr_m0/DETR_R50_500/detr-r50-e632da11.pth",
+      "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc"
+    },
+    "dino_r50_4s_12e": {
+      "family": "dino",
+      "checkpoint_path": "checkpoints/checkpoint0011_4scale.pth",
+      "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a"
+    }
+  },
+  "split": {
+    "name": "D",
+    "frozen_size": 1500,
+    "minimum_complete_paired_images_per_model": 400,
+    "one_primary_unit_per_image": true,
+    "eligibility_uses_intervention_outcomes": false
+  },
+  "intervention": {
+    "primary_arm": "targeted_reverse",
+    "primary_control": "reverse_sham",
+    "arms": [
+      "baseline",
+      "baseline_repeat",
+      "identity",
+      "targeted_reverse",
+      "reverse_sham",
+      "random_edge",
+      "different_object"
+    ],
+    "decoder_layer_input_zero_based": 3
+  },
+  "measurement": {
+    "local_deadzone": 0.0001,
+    "target_set_deadzone": 0.0001,
+    "image_set_deadzone": 0.0001,
+    "identity_or_repeat_noise_max": 0.00001,
+    "decomposition_closure_tolerance": 1e-12
+  },
+  "execution": {
+    "acknowledgement": "I_ACKNOWLEDGE_H4_D_EXECUTION_NO_D_OUTCOME_BEFORE_FULL_INTEGRITY",
+    "acknowledgement_received": true,
+    "acknowledgement_record": "artifacts/iclr_h4/H4_D_EXECUTION_ACKNOWLEDGEMENT.json",
+    "phase0_gpu_hour_cap": 0.25,
+    "phase1_gpu_hour_cap": 3.0,
+    "total_gpu_hour_cap": 15.0,
+    "new_checkpoint_training_allowed": false,
+    "new_cloud_instances_allowed": false,
+    "d_intervention_currently_allowed": false,
+    "blocked_on": [
+      "runner_sha256",
+      "aggregator_sha256",
+      "technical_smoke_audit_sha256",
+      "d_eligibility_manifest_sha256"
+    ],
+    "scientific_outcome_read_before_full_integrity": false
+  }
+}

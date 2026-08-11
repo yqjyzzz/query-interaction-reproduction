@@ -1,0 +1,108 @@
+{
+  "schema_version": "fq.iclr.transport.t2_confirmation.v1",
+  "status": "FROZEN_AWAITING_CONFIRMATION_EXECUTION_ACK",
+  "parent_r_pilot_status": "PASS_T2_R_OPERATOR_BRIDGE_TECHNICAL_PILOT",
+  "parent_r_pilot_integrity_sha256": "ac3c457b84b267419343a07430bfc1a31abc8eb20543d471278b06d70b757df8",
+  "parent_t1_aggregate_sha256": "e1d5898e845f1fa0d0188e74b7caa7ddac7230708b2596d47eb90dc3cef3c544",
+  "single_question": "After matching immediate message displacement, which of message removal, proportional renormalization, fixed-donor redistribution, or the hard endpoint explains the pre-readout response?",
+  "models": ["detr_r50_500", "dino_r50_4s_12e"],
+  "population": {
+    "manifest": "artifacts/iclr_transport/T2_CONFIRMATION_POPULATION_MANIFEST.json",
+    "manifest_sha256": "e240b4ec4deaef8e54e84f52d4e25510a37a4c3bbc19ecc5b9450b238ab2aaa5",
+    "source": "COCO_2017_VAL_PUBLIC_NON_RDVF_NAMESPACE",
+    "initial_per_model": 128,
+    "precision_extension_per_model": 128,
+    "maximum_per_model": 256,
+    "same_images_for_both_models": true,
+    "extension_trigger": "PRECISION_ONLY",
+    "extension_forbidden_for_significance_or_direction": true
+  },
+  "operators": {
+    "M": "C_MESSAGE_ONLY_ATTENUATION",
+    "P": "A_RENORMALIZING_ATTENUATION",
+    "D": "B_FIXED_DONOR_TRANSFER",
+    "H": "HARD_DELETION_ENDPOINT",
+    "doses": [0.25, 0.5, 0.75],
+    "hard_endpoint_separate": true,
+    "dose_calibration_primary": "per-image per-head immediate_message_norm",
+    "dose_calibration_secondary": ["removed_attention_mass", "attention_row_JS"]
+  },
+  "endpoints": {
+    "primary": ["local", "spillover", "fixed"],
+    "reported_secondary": ["focal", "matching", "rematched", "selection", "native"],
+    "classification_uses_secondary": false
+  },
+  "inference": {
+    "unit": "paired_image",
+    "pairwise_contrasts": [
+      {"id": "M_MINUS_P", "left": "M", "right": "P"},
+      {"id": "M_MINUS_D", "left": "M", "right": "D"},
+      {"id": "P_MINUS_D", "left": "P", "right": "D"}
+    ],
+    "classification_support_contrasts": [
+      "M_MINUS_BASELINE",
+      "P_MINUS_BASELINE",
+      "D_MINUS_BASELINE",
+      "H_MINUS_BASELINE"
+    ],
+    "endpoint_discontinuity_contrast": "H outcome effect minus the P outcome effect predicted at H realized message norm",
+    "endpoint_continuity_fit": "within each bootstrap resample and model/endpoint, ordinary least squares of P outcome effect on realized immediate-message norm using baseline plus P doses 0.25, 0.5 and 0.75; evaluate at the observed H immediate-message norm",
+    "bootstrap_draws": 10000,
+    "stratified_by_manifest_stratum": true,
+    "simultaneous_method": "within-model max-studentized over all pairwise, classification-support and endpoint-discontinuity contrasts across the 3 primary endpoints",
+    "familywise_confidence": 0.95,
+    "equivalence_bands": {
+      "local": 0.005,
+      "spillover": 0.001,
+      "fixed": 0.001
+    },
+    "difference_rule": "simultaneous interval wholly outside the endpoint equivalence band",
+    "equivalence_rule": "simultaneous interval wholly inside the endpoint equivalence band",
+    "inconclusive_rule": "neither difference nor equivalence",
+    "band_rationale": "pre-outcome minimum scientifically meaningful normalized-quality changes: 0.5 percentage point for query-local quality and 0.1 percentage point for per-object set utility"
+  },
+  "positive_control": {
+    "id": "HARD_DELETION_ASSAY_SENSITIVITY",
+    "contrast": "H minus baseline",
+    "outcome_level": true,
+    "success": "for each model, at least one primary endpoint simultaneous interval lies wholly outside its frozen equivalence band",
+    "failure_action": "T2_INCONCLUSIVE_PRECISION with assay_failure=true",
+    "excluded_from_mechanism_classification": true
+  },
+  "precision_rule": {
+    "evaluate_after_initial_128_only_after_integrity_pass": true,
+    "extend_to_256_if": "any classification-required contrast/end-point interval is inconclusive and its half-width exceeds its endpoint equivalence-band width",
+    "do_not_extend_if": "all classification-required intervals are difference or equivalent, or inconclusive intervals already have half-width <= equivalence-band width",
+    "maximum_per_model": 256,
+    "no_unbounded_expansion": true
+  },
+  "classification": {
+    "per_model_per_endpoint_first": true,
+    "transport_equivalent": "all M-P, M-D and P-D primary contrasts in both models equivalent",
+    "renormalization_dependent": "M-P and M-D differ while P-D is equivalent, with no conflicting endpoint/model class",
+    "donor_dependent": "P-D differs, with no conflicting endpoint/model class",
+    "message_specific": "M-baseline differs and P/D are baseline-equivalent or opposite-direction under simultaneous intervals, with no conflicting endpoint/model class",
+    "endpoint_discontinuity": "H departs from the frozen P continuity region under the endpoint-discontinuity simultaneous contrast",
+    "mixed": "primary endpoints or models yield more than one supported mechanism class",
+    "inconclusive": "no unique supported class at n=256, including assay failure"
+  },
+  "terminal_states": [
+    "T2_TRANSPORT_EQUIVALENT_AFTER_CALIBRATION",
+    "T2_RENORMALIZATION_DEPENDENT",
+    "T2_DONOR_DEPENDENT_REDISTRIBUTION",
+    "T2_MESSAGE_SPECIFIC",
+    "T2_ENDPOINT_DISCONTINUITY",
+    "T2_MIXED_OPERATOR_DEPENDENCE",
+    "T2_INCONCLUSIVE_PRECISION"
+  ],
+  "firewall": {
+    "exact_execution_ack_required": true,
+    "exact_execution_ack": "I_ACKNOWLEDGE_T2_CONFIRMATION_128_NO_OUTCOME_BEFORE_FULL_INTEGRITY",
+    "aggregation_before_full_integrity": false,
+    "single_frozen_aggregation_after_integrity": true,
+    "scientific_effect_readout_during_raw_execution": false,
+    "V_read": false,
+    "F_read": false,
+    "git_commit": false
+  }
+}

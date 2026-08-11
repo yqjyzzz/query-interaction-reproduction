@@ -1,0 +1,15 @@
+{
+  "images": [
+    {
+      "id": 3,
+      "file_name": "0003.jpg"
+    }
+  ],
+  "annotations": [
+    {
+      "image_id": 3,
+      "category_id": 7,
+      "bbox": [1, 2, 5, 6]
+    }
+  ]
+}

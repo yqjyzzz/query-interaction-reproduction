@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "query-interaction-reproduction"
+version = "0.2.0"
+description = "Exact aggregate reproduction and an isolated computer-vision engineering track for a query-interaction study"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==1.26.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9.0"]
+demo = ["torch>=2.0", "Pillow>=10.0"]
+huggingface = ["torch>=2.0", "Pillow>=10.0", "transformers>=4.40"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "cv_demo/tests"]
+addopts = "-q --basetemp=.pytest_tmp"
+
+[tool.setuptools.packages.find]
+where = ["src"]

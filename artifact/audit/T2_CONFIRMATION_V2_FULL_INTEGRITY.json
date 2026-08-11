@@ -1,0 +1,49 @@
+{
+  "schema_version": "fq.iclr.transport.t2_confirmation_full_integrity.v1",
+  "status": "PASS_T2_CONFIRMATION_V2_FULL_INTEGRITY_NO_AGGREGATE",
+  "generated_at": "2026-07-25T17:27:45.108480+00:00",
+  "execution_sha256": "b5eaa68f235d7a989f7b9b20557e2795c62d93bffd1f7b2fcf2912fdd8f591ae",
+  "prerequisite_checks": {
+    "confirmation_hash": true,
+    "pair_manifest_hash": true,
+    "pair_integrity_hash": true,
+    "message_v2_hash": true,
+    "input_integrity_hash": true,
+    "overlap_hash": true,
+    "mapping_hash": true,
+    "overlap_pass": true,
+    "mapping_pass": true,
+    "precision_sealed": true,
+    "aggregation_firewall": true,
+    "V_F_sealed": true
+  },
+  "models": {
+    "detr_r50_500": {
+      "expected_receipts": 128,
+      "observed_receipts": 128,
+      "unique_image_ids": 128,
+      "checkpoint_sha256": "e632da11ec76ae67bac2f8579fbed3724e08dead7d200ca13e019b197784eadc",
+      "rc_zero": true,
+      "failure_count": 0,
+      "failures": []
+    },
+    "dino_r50_4s_12e": {
+      "expected_receipts": 128,
+      "observed_receipts": 128,
+      "unique_image_ids": 128,
+      "checkpoint_sha256": "0bcd6b0c33d60ed33461ce6f02ce5797a819c7c02eb7e15b76adfb6df307955a",
+      "rc_zero": true,
+      "failure_count": 0,
+      "failures": []
+    }
+  },
+  "serial_rc_zero": true,
+  "total_expected_receipts": 256,
+  "total_observed_receipts": 256,
+  "scientific_effect_readout": false,
+  "aggregation_started": false,
+  "precision_extension_read": false,
+  "V_F_read": false,
+  "failure_count": 0,
+  "failures": []
+}

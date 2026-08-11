@@ -1,0 +1,74 @@
+{
+  "schema_version": "fq.iclr.transport.t2_overlap.v1",
+  "status": "PASS_T2_REALIZED_DOSE_OVERLAP",
+  "config_sha256": "c158b20c72bdf3c3549750a3446d2ffd7a8699c6be76152bddfb2d428d12e1d1",
+  "integrity_sha256": "87ecd93feeddba4d3d730180180f0a7ec86ae9535f19b5f2bd53711f095555b8",
+  "models": {
+    "detr_r50_500": {
+      "n": 128,
+      "pooled_log1p_sd": 0.16140563960280063,
+      "simultaneous_critical": 2.308150945241891,
+      "directions": {
+        "C_v2->A": {
+          "coverage": 0.8688151041666665,
+          "simultaneous_lower": 0.8433098785459501
+        },
+        "A->C_v2": {
+          "coverage": 0.873046875,
+          "simultaneous_lower": 0.8467563592481124
+        },
+        "C_v2->B": {
+          "coverage": 0.8750000000000001,
+          "simultaneous_lower": 0.8492838541666669
+        },
+        "B->C_v2": {
+          "coverage": 0.8616536458333331,
+          "simultaneous_lower": 0.8355051016642147
+        },
+        "A->B": {
+          "coverage": 0.8769531249999998,
+          "simultaneous_lower": 0.8534854694811101
+        },
+        "B->A": {
+          "coverage": 0.857096354166667,
+          "simultaneous_lower": 0.8332328631002777
+        }
+      },
+      "pass": true
+    },
+    "dino_r50_4s_12e": {
+      "n": 128,
+      "pooled_log1p_sd": 0.16452196251660237,
+      "simultaneous_critical": 2.305629652928341,
+      "directions": {
+        "C_v2->A": {
+          "coverage": 0.8961588541666664,
+          "simultaneous_lower": 0.8746744791666665
+        },
+        "A->C_v2": {
+          "coverage": 0.9117838541666669,
+          "simultaneous_lower": 0.8908240643568003
+        },
+        "C_v2->B": {
+          "coverage": 0.9104817708333333,
+          "simultaneous_lower": 0.8892507241205189
+        },
+        "B->C_v2": {
+          "coverage": 0.9013671874999999,
+          "simultaneous_lower": 0.8791094951047633
+        },
+        "A->B": {
+          "coverage": 0.902669270833333,
+          "simultaneous_lower": 0.8807040485778991
+        },
+        "B->A": {
+          "coverage": 0.8736979166666665,
+          "simultaneous_lower": 0.8498156962989099
+        }
+      },
+      "pass": true
+    }
+  },
+  "scientific_effect_readout": false,
+  "V_F_read": false
+}

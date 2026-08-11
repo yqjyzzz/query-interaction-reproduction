@@ -1,0 +1,74 @@
+{
+  "schema_version": "tmlr.p1.analysis_ready_export.v1",
+  "project_root_used_for_export": "<frozen-source-project>",
+  "V_F_read": false,
+  "new_model_inference": false,
+  "source_scripts": {
+    "h4_d": {
+      "path": "tools/iclr_h4_aggregate.py",
+      "sha256": "cfd51912baf3f7b7ef057331ae0a95ade3f42d2fbb772e17fa081746bd6f7eda"
+    },
+    "gate_c": {
+      "path": "tools/iclr_h4_gate_c_aggregate.py",
+      "sha256": "0f003d18b6776e506ef50fdecbb6667e8f39b2fe5310fb06456e9badfc88a152"
+    },
+    "t1": {
+      "path": "tools/iclr_transport_t1_aggregate.py",
+      "sha256": "ca5c2f866f428c1e9243dbe13f3a888151db38e476ad92ef0e30a3047f1b128d"
+    },
+    "t2": {
+      "path": "tools/iclr_transport_t2_aggregate.py",
+      "sha256": "45d88d23ba51be7205f56b2ce33085739235f04bd468bfab93c907b1302ee449"
+    }
+  },
+  "exports": {
+    "h4_d": {
+      "detr_r50_500": {
+        "rows": 710,
+        "path": "analysis_ready/h4_d_detr_r50_500.jsonl",
+        "sha256": "9be76200dfd16d5999d24bd62fec2db213619091507b15e293dfaf891bbd5f1e"
+      },
+      "dino_r50_4s_12e": {
+        "rows": 710,
+        "path": "analysis_ready/h4_d_dino_r50_4s_12e.jsonl",
+        "sha256": "f631d50de8144c455e068e1215478d74c2870eb10d5de8f7abfb0277bf1581fc"
+      }
+    },
+    "gate_c": {
+      "detr_r50_500": {
+        "rows": 710,
+        "path": "analysis_ready/gate_c_detr_r50_500.jsonl",
+        "sha256": "bd95cb280d87cf7e98ce5387d9f0160175a9f04e1830958fe9c22e3232549fc2"
+      },
+      "dino_r50_4s_12e": {
+        "rows": 710,
+        "path": "analysis_ready/gate_c_dino_r50_4s_12e.jsonl",
+        "sha256": "08b720f5d719372f28f6f6148fd0dc5b43744d1b21cadb620d1667af446dafef"
+      }
+    },
+    "t1": {
+      "detr_r50_500": {
+        "rows": 710,
+        "path": "analysis_ready/t1_detr_r50_500.jsonl",
+        "sha256": "e64026683a8cc36def6fd89f963371678b943ee30e5059dc999894079a8c3062"
+      },
+      "dino_r50_4s_12e": {
+        "rows": 710,
+        "path": "analysis_ready/t1_dino_r50_4s_12e.jsonl",
+        "sha256": "857b95df5e3b1df0b9626ff1c0cd0ad20fb2eb21c1df574bce08985a2e872975"
+      }
+    },
+    "t2": {
+      "detr_r50_500": {
+        "rows": 128,
+        "path": "analysis_ready/t2_detr_r50_500.jsonl",
+        "sha256": "834547c89c203fadbc26f731b6cdba7aaeb221fcadea211a1a6211001a27801b"
+      },
+      "dino_r50_4s_12e": {
+        "rows": 128,
+        "path": "analysis_ready/t2_dino_r50_4s_12e.jsonl",
+        "sha256": "0ad3653845e7b33cd589e1246c152dae25508f15964d53c05ccb1f2be18860ec"
+      }
+    }
+  }
+}

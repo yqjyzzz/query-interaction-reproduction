@@ -1,0 +1,32 @@
+{
+  "status": "PASS_ANALYSIS_READY_EXACT_REPRODUCTION",
+  "tolerance": 1e-12,
+  "results": {
+    "h4_d": {
+      "status": "PASS",
+      "maximum_absolute_numeric_difference": 2.2090619264392153e-18,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "gate_c": {
+      "status": "PASS",
+      "maximum_absolute_numeric_difference": 1.3877787807814457e-17,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "t1": {
+      "status": "PASS",
+      "maximum_absolute_numeric_difference": 0.0,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "t2": {
+      "status": "PASS",
+      "maximum_absolute_numeric_difference": 4.440892098500626e-16,
+      "mismatch_count": 0,
+      "mismatches": []
+    }
+  },
+  "V_F_read": false,
+  "new_model_inference": false
+}

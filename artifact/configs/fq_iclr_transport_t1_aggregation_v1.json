@@ -1,0 +1,53 @@
+{
+  "schema_version": "fq.iclr.transport.t1_aggregation.v1",
+  "status": "FROZEN_BEFORE_T1_OUTCOME_AGGREGATION",
+  "parent_gate": "T0B_OVERLAP_SUFFICIENT_ENTER_T1",
+  "single_question": "After outcome-blind realized-dose mapping, does the hard-minus-mass operator difference arise before matching/native readout, at the readout chain, in both, or neither?",
+  "models": ["detr_r50_500", "dino_r50_4s_12e"],
+  "sample_size_per_model": 710,
+  "mapping": {
+    "source": "T0B input-only receipts",
+    "metrics": ["absolute_target_weight_change", "immediate_message_norm"],
+    "transform": "log1p",
+    "scale": "model-specific pooled standard deviation across hard and all mass doses",
+    "distance": "euclidean standardized two-metric distance",
+    "candidate_doses": [0.25, 0.5, 0.75, 1.0],
+    "tie_break": "smallest dose",
+    "outcomes_used": false
+  },
+  "estimands": {
+    "operator_contrast": "hard_target_common_baseline_effect minus mapped_mass_target_common_baseline_effect",
+    "pre_readout": ["local", "focal", "spillover", "fixed"],
+    "readout_chain_reported": ["matching", "rematched", "selection", "native"],
+    "readout_specific_gate": ["matching", "selection"],
+    "readout_gate_reason": "rematched and native totals inherit upstream fixed effects; only matching and selection increments localize readout-specific differences",
+    "models_combined": false
+  },
+  "statistics": {
+    "unit": "paired_image",
+    "bootstrap_draws": 10000,
+    "stratified": true,
+    "simultaneous_method": "within-model max-studentized bootstrap",
+    "equivalence_margin": 0.0001,
+    "difference": "simultaneous interval lies wholly above +margin or below -margin",
+    "equivalent": "simultaneous interval lies wholly inside [-margin,+margin]"
+  },
+  "terminal_rule": {
+    "T1_PRE_READOUT_DIFFERENCE": "at least one pre-readout difference, no readout-chain difference",
+    "T1_READOUT_DEPENDENT": "no pre-readout difference, at least one readout-chain difference",
+    "T1_PARTIAL_MIXED": "both pre-readout and readout-chain differences, including cross-model component divergence",
+    "T1_TRANSPORT_EQUIVALENT": "all endpoints in both models are equivalent",
+    "T1_INCONCLUSIVE": "no detected difference and not all endpoints are equivalent"
+  },
+  "next_route": {
+    "T1_PRE_READOUT_DIFFERENCE": "T2_MESSAGE_RENORMALIZATION_REDISTRIBUTION",
+    "T1_READOUT_DEPENDENT": "T2_READOUT_CONTINUITY_AND_MATCHING_FIRST",
+    "T1_PARTIAL_MIXED": "T2_OPERATOR_BRIDGE_PLUS_READOUT_CHAIN",
+    "T1_TRANSPORT_EQUIVALENT": "SHRINK_CLAIM_NOMINAL_DOSE_INEQUIVALENCE",
+    "T1_INCONCLUSIVE": "STOP_AND_ASSESS_PRECISION_AND_ASSAY_VALUE"
+  },
+  "scientific_outcome_read_before_mapping_freeze": false,
+  "new_model_inference": false,
+  "V_read": false,
+  "F_read": false
+}

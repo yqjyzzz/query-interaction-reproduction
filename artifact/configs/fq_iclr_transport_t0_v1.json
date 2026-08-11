@@ -1,0 +1,33 @@
+{
+  "schema_version": "fq.iclr.transport.t0.v1",
+  "status": "FROZEN_BEFORE_T0_REAGGREGATION",
+  "data": "existing_h4_d_and_gate_c_v2_receipts_only",
+  "models": ["detr_r50_500", "dino_r50_4s_12e"],
+  "sample_size_per_model": 710,
+  "mass_doses": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "continuous_endpoints": ["local", "target", "fixed", "rematched", "native"],
+  "bootstrap": {
+    "draws": 10000,
+    "unit": "paired_image",
+    "stratified": true,
+    "simultaneous_method": "within_model_max_studentized_bootstrap"
+  },
+  "equivalence_margin": {
+    "utility_resolution": 0.0001,
+    "noise_multiplier": 10.0,
+    "rule": "max(utility_resolution, noise_multiplier * max_abs_baseline_repeat_or_identity_effect)"
+  },
+  "mapping_source_of_truth": "receipt_pair_plus_actual_hook_audit",
+  "native_effect": "same_readout_arm_native_image_set_utility_minus_baseline_native_image_set_utility",
+  "operator_difference": "hard_targeted_reverse_minus_mass_target_at_same_image_and_endpoint",
+  "hard_active_control": "reverse_sham_is_actual_sham_recipient_leader_source_deletion",
+  "decision_rule": {
+    "comparable": "sample/hash/pair/mapping/common-reference/common-readout/native-identity all close",
+    "new_input_required": "realized per-head mass or message displacement absent",
+    "T1_allowed": false,
+    "T2_allowed": false
+  },
+  "V_read": false,
+  "F_read": false,
+  "new_model_inference": false
+}

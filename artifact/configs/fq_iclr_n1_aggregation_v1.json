@@ -1,0 +1,90 @@
+{
+  "schema_version": "fq.iclr.n1.aggregation.v1",
+  "protocol_id": "future-qc-iclr-n1-frozen-mechanism-routing-v1",
+  "status": "FROZEN_BEFORE_FULL_N1_EFFECT_READOUT",
+  "locks": {
+    "contract": [
+      "contracts/05_ICLR_N1_MECHANISM_IDENTIFICATION_CONTRACT.md",
+      "9f8a91f1ef34e042dd323c0a9608b4a00c589cba207f3f01e5d9cd4c67df9dd3"
+    ],
+    "sample_manifest": [
+      "artifacts/iclr_n1/N1_REPLAY_SAMPLE_MANIFEST.json",
+      "b56eb0eef3b79da37003c0240d6ffaf948561cc18b063d3efdc9a298458a4d27"
+    ],
+    "statistics_code": [
+      "src/future_qc/iclr_n1/statistics.py",
+      "5a54f75036fe3cee1234e46920d546241e866b6c0de41db4e4c80ecc70ebbc86"
+    ],
+    "full_integrity_auditor": [
+      "tools/iclr_n1_full_integrity_audit.py",
+      "e133b866fde5deb5557ea24ba077d29cbdf75c624cc973fe3381c23a9eed6fff"
+    ],
+    "technical_smoke_integrity": [
+      "artifacts/iclr_n1/N1_TECHNICAL_SMOKE_INTEGRITY_AUDIT.json",
+      "5c7b6f09180e8c9393053bcc0a6ada924b380f17cd63792c7315bbddc70e61d1"
+    ]
+  },
+  "model_ids": [
+    "detr_r50_500",
+    "dino_r50_4s_12e"
+  ],
+  "estimand_directions": {
+    "reverse_fixed_h1": -1,
+    "reverse_fixed_h2": 1,
+    "reverse_set": 1,
+    "reverse_recovery": 1,
+    "reverse_owner_switch": 1,
+    "reverse_competitor_rank_improvement": 1,
+    "reverse_competitor_extinction": -1,
+    "reverse_duplicate_pairs": -1,
+    "reverse_native_postprocess": 1,
+    "direct_fixed": 1,
+    "direct_set": 1
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "confidence_level": 0.95,
+    "seed_prefix": "FQ-ICLR-N1-BOOTSTRAP-V1"
+  },
+  "robustness": {
+    "trim_fraction_each_tail": 0.1,
+    "winsor_limits": [
+      0.01,
+      0.99
+    ],
+    "minimum_same_direction_image_fraction": 0.55,
+    "leave_one_image_out_direction_required": true
+  },
+  "gate": {
+    "minimum_valid_paired_images_per_model": 200,
+    "minimum_bootstrap_direction_probability": 0.9,
+    "h1_required": [
+      "reverse_fixed_h1",
+      "reverse_set",
+      "reverse_recovery",
+      "reverse_owner_switch"
+    ],
+    "h2_required": [
+      "reverse_fixed_h2",
+      "reverse_set"
+    ],
+    "h2_competition_support_any": [
+      "reverse_duplicate_pairs",
+      "reverse_fixed_n5plus_gt_n1"
+    ],
+    "negative_control_comparable_rule": "max_abs_control_mean_gte_abs_reverse_fixed_mean",
+    "allowed_cross_model_routes": [
+      "shared_h1",
+      "shared_h2",
+      "detr_h1_dino_h2",
+      "detr_h2_dino_h1"
+    ],
+    "h3_only_action": "STOP_METHOD_MAIN_LINE",
+    "original_m2_allowed": false
+  },
+  "execution_boundary": {
+    "requires_full_integrity_status": "PASS_N1_FULL_RAW_RECEIPT_INTEGRITY",
+    "aggregation_before_integrity_allowed": false,
+    "f_split_read_allowed": false
+  }
+}

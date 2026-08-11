@@ -1,0 +1,14 @@
+{
+  "backend": "detr",
+  "checkpoint": "path/to/checkpoint.pt",
+  "images": "path/to/images",
+  "annotations": "path/to/annotations/instances_val2017.json",
+  "output": "runs/cv_demo",
+  "device": "auto",
+  "batch_size": 2,
+  "score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "seed": 7,
+  "category_id_map": {},
+  "labels": {}
+}

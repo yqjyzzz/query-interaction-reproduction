@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated manuscript and this reproduction package."
+title: "Query-Interaction Intervention Audit: Reproduction Package"
+version: 0.1.0
+date-released: 2026-08-11
+authors:
+  - family-names: Zhang
+    given-names: Ze
+    affiliation: School of Biomedical Engineering, ShanghaiTech University
+  - family-names: Zhang
+    given-names: Yang
+    affiliation: Wuhan United Imaging Surgical Co., Ltd.
+keywords:
+  - computer vision
+  - reproducibility
+  - object detection
+  - intervention audit
+  - query interaction

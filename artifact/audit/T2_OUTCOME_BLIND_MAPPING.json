@@ -1,0 +1,3347 @@
+{
+  "schema_version": "fq.iclr.transport.t2_mapping.v1",
+  "status": "PASS_T2_OUTCOME_BLIND_MAPPING_FROZEN",
+  "config_sha256": "c158b20c72bdf3c3549750a3446d2ffd7a8699c6be76152bddfb2d428d12e1d1",
+  "integrity_sha256": "87ecd93feeddba4d3d730180180f0a7ec86ae9535f19b5f2bd53711f095555b8",
+  "overlap_sha256": "7f1fa9298021f507f284d7fe5414cd6245857df2e4c3a04f23a6422f6c34d053",
+  "models": {
+    "detr_r50_500": {
+      "rows": [
+        {
+          "image_id": "000000008277",
+          "image_sha256": "692fc5469af5fffdc0dac05e709a0ac1380dca32d4c57436903b122f3c3558dc",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000010977",
+          "image_sha256": "fba520c270003f70a09bdbb9ab8ca856a4a6cde110c64f05879e96b755ca7af6",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000015660",
+          "image_sha256": "d908b9557857567ac19501f12f6c090ba3568d11421a2fe6296133a27e48a991",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000023126",
+          "image_sha256": "65917720776abafb2706e037fda7a9d90eb17b659bfa49ac20d19b06abff2e9e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000026926",
+          "image_sha256": "7126855b6fe8548a6b9da18d8424f803c0eeb37deb3f5764f95f4d60d1915b37",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000031118",
+          "image_sha256": "2cdfc92ff0193efb0a93f9021841308f1cb204d1ac4810d00aa32a515ef033f7",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000046872",
+          "image_sha256": "fd991bcccf8342f3ab5c5228dce3873765964a545365ac3f31d69b32c8a9258d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000051610",
+          "image_sha256": "c4b6fdea9764b29e9ef8015c0bf6c1bb45c396f17fa0a425cafa9f2c32a025e6",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000053529",
+          "image_sha256": "560b4e0fc5844448f15891aa241443abc17b670698b3c56c4ae17db37a8cfdbc",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000057672",
+          "image_sha256": "7f497377f9ad39d7b90752d4faf5cd7605329652d511f5009430d39231512334",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000060102",
+          "image_sha256": "49d1bff2f0dacffc712afc003fe3d2b8705881e5d5e241ec02d37e431d49d01c",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000064868",
+          "image_sha256": "b3cde4030154cacc17d93aa0a01344ec749f96faab680016e0f680458410cb52",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000065350",
+          "image_sha256": "963a129714e3675b99b6a405a2cb46eca5678241358bb6b6bbefc3c3f1943ae0",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000066038",
+          "image_sha256": "6ffd3baefa47644f7bf33604d7c1be20c6012950ecbc5dc328d2be9d5833db12",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000069213",
+          "image_sha256": "c219b7e4409b0dcaab0ec1932372f7f91bfc72abb999a3ed92405c1089eb0b0f",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000071711",
+          "image_sha256": "fccd841030f6c5fb2e8acc23bf1105d077f6715d1219010a7ee061ba32917858",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000074733",
+          "image_sha256": "d99c93fb6d22a5d51bbb6e09ca5f10c11bdcf90a711abf6cc83188df52cc456a",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000078915",
+          "image_sha256": "800d4feb64141487b944c3ccd32554a2dc4095589b8cb4d617066a9d0e7c6c43",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000084664",
+          "image_sha256": "f936a16148ba0460b3b89cb4f4aa3866f3079210b7e641abd0b016ddcd3e51e7",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000086483",
+          "image_sha256": "ab17c10220fca3e893e48673b0eacaf9d206999ab17279560c982d16fb8798a9",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000088951",
+          "image_sha256": "2abcdbf48031a2d126452f1b383195a8a25189fa2620d085e35f6184ce73ed0b",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000090155",
+          "image_sha256": "5dce15f7160f3efd68efacab3932a634602533f30e0345967e890f883b8e5604",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000104782",
+          "image_sha256": "667a8bd3ea18c796687c73738455fdf1ab374a32576d3b0bf37ba71760902e4f",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000109798",
+          "image_sha256": "8fafbfb6d1c320f9efc59291748c0b9a730726db311364c03280b2de39fe656f",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000109992",
+          "image_sha256": "4aafa6196c1802e0eb2e2c39df41ab9f4b69c449c254a9663578b8a7b79c9444",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000118921",
+          "image_sha256": "321f2374beb5e907f2bc2e7eb8ba1fa5fc311f922a9d4dab86230dcc37beb0b4",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000129113",
+          "image_sha256": "7afcf3b9fe07b838a808faf6cf1ba83e1527ad4e63fa79173f8a339bc3114d0d",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000133233",
+          "image_sha256": "7f4aaf803281ebe5ddecd6bbb969cc626b65bf893cd2198d05ec7b5a562aa0d1",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000135890",
+          "image_sha256": "7c3b5e6755b58d55585200d2cf15fd46d0119dcb4b507d35df34f4da914f8d03",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000136600",
+          "image_sha256": "d60884afbf97caa7f0a3a6ae37eb8b25ae61be3abffc25192622980f177afcc1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000136715",
+          "image_sha256": "cde59a511126e505df5b80635e71768e26874382a1bad191f5e26ad820597701",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000138550",
+          "image_sha256": "819557b8df3fbbf27358a66aa87adaa5a4908ad95b418f50d1026b43bf9ff0a7",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000139099",
+          "image_sha256": "ab9c7a09369b381043f90e6008307610d63cd9cbe3803ba1af6b1998b361fe51",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000143931",
+          "image_sha256": "45cf81830e1b95dc25a9be1ebdf2798238b9bda4dc3e34e589442c5c9ad98aad",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000155179",
+          "image_sha256": "df0a53913e3fb3e4decf13aecb762fe0abe287f353d79af26eb63b13002f3852",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000158548",
+          "image_sha256": "8b8662687f8a639949f622da9ccec56bff0e0569b4eb498aa77f0520a19605b1",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000163640",
+          "image_sha256": "e9bcd6d4d276493efdb6fc3ac4bcf3e8b40318f896a68d84981adca606a51bba",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000164885",
+          "image_sha256": "ed7d5c90e44189de91ba723744485059c9b54c26b3ca4ab3842d53ca489d50a1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000164969",
+          "image_sha256": "6f8cebaacfbcfcf955dc01896b6fc095faa79914ea7f0cf36ad96ec6c4a8690c",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000166287",
+          "image_sha256": "8c1e01146df6e51a43b12bedd7913834d5ed8f91031924a964e915a74cc9f72d",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000170116",
+          "image_sha256": "329e023a2f40925b9f28021f9daf9407d568b01edf5fd0b77ac772e27e2553c4",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000172595",
+          "image_sha256": "faa06206531e26d29bed2d1ecca535d5496a017e1e88a7329f19bf4a5574a83b",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000177935",
+          "image_sha256": "4e1e6de983ed9e03519ed8af56493934b3c633acd3e19c461aa009f699c41855",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000179642",
+          "image_sha256": "3ca6f60e050dce9f1cfcbb68052cfdc0ea877fb99529beafa6779c0fa719df17",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000185473",
+          "image_sha256": "ccf9002db2e904761e86212f5b3d9155cb3c7a6a5f3c020ce07ff70fe4a03e7e",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000186938",
+          "image_sha256": "291ff31f43eccd746a0f2c13b7b38b5ff59579db14f8229105bf57eff7da9850",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000188592",
+          "image_sha256": "d91e1e7121a0f877856108f6244212ef0b34cfcbea0b6563f22a0f618eeafc27",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000189213",
+          "image_sha256": "7c2e5f491b5135098b40bd7b9c545ea8f06f738d863435d984882314adbd4c9e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000192607",
+          "image_sha256": "df1cfbabe293d62e1ad29ebf0e79699de8c1cef2a09177c5192255846a756974",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000195165",
+          "image_sha256": "05d5d8c905b8b4a266d7dc1c82906b35fc88679a42b331b065d73c14439fb722",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000205282",
+          "image_sha256": "82b35c37e5b52aae04650677503465b729785943dc7ab2a9eb4b545f66864625",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.25,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.5,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000206027",
+          "image_sha256": "2d02a9fe14338778b9b755b92da237f6972e070cc4b1b0f9c0ce4e6923b2a855",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000207728",
+          "image_sha256": "86e23bad1cc503b9c903fab062701c9c2676fc66c8e4146770323fd7284f7fe8",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000219283",
+          "image_sha256": "cb81061ef4871012541702ab329af7b8dc84177848c6bcd59cd7e5dd6b489cb8",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000227898",
+          "image_sha256": "6169122c7fd64b036eb85598a7f1085a4f25c7ffb57f0e1ac61e0e2ea52196d0",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000231580",
+          "image_sha256": "f4c3efedc90249f7671736c8a1eb3446ff13446a7160ab8e3965ff16c760dd7c",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000241319",
+          "image_sha256": "86e9949e3dbaa94b1543f585375f1d8ef1b05aa8411fca298bc4c13e53d29c1d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000243989",
+          "image_sha256": "36a40ad058e7e4ad2ceca9445cc88feca3b9fbea53d727953dbfce1602f97aeb",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000248111",
+          "image_sha256": "cb5ac7d777b00669aea16772fa45f1015baf4b06d1b887e76fa6557bac2cb429",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000248631",
+          "image_sha256": "45ea37728704ce7d5a62ff39c68ab4a1d149cdd743414c0a5455524ea337150a",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000258541",
+          "image_sha256": "b8f193ba56ea637626ac4f754f8c5d7192660fadab754c59e368048d212be01d",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.75,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000263299",
+          "image_sha256": "62e5029b36c901539d8733037a5340ae2ef85ee287094ac784b28e9463b9d502",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000264968",
+          "image_sha256": "ee603e1220d1b99de201a8abfa271774be252a270033df835eef73640c9d0703",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000271402",
+          "image_sha256": "b13b6ba1b399210e9cfd2aa3f14e7a4c209e543ee33cdca18d482bef4ff8dab4",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000272364",
+          "image_sha256": "a412c21283703aa8822175e319638957a0fbb1e0c909d302a5c27a6188b94989",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.25,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.5,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000274687",
+          "image_sha256": "ebc13d2019005f8d7009f72f33e0e861d5e98837ca4c1d56958636d58dd8ba2b",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000286708",
+          "image_sha256": "a7b888fd1076cc9816e78e96ecb94e7a346e740d578af0dcbc037319944c1bc3",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000290771",
+          "image_sha256": "7d7f83ad4594d4ccf7b2c10ffcfe063cd84cbda30713368b594ae31aa4992b6d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000291664",
+          "image_sha256": "f8570147f5857eb91dcafb0f6e14caa06ad9db8541d99768e18cdae1b9a7c6cd",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000292330",
+          "image_sha256": "69b3cc092cd58a3a62415a760fa09dc38cf576443d99464d17d5c42118843851",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000296657",
+          "image_sha256": "ac48b0d2c8a9dd00737b3ad1aadc59e96f2721a6d64719b881a6f6acdb46d3c8",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000301718",
+          "image_sha256": "54a5a90b270b5ae95672c8ed2947867efabe7acf977d89c985cd1e909a58b1be",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000304812",
+          "image_sha256": "21e69b93c9ea6a7c3352331969ee8ee6bf8025bc2dc09cfbec67c32cdc48938a",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000310200",
+          "image_sha256": "3f9b03989d2abed1869013389aa8ac9885b7fd8ceedd01bd5bc89b8dddd69738",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000312278",
+          "image_sha256": "60d58df335eb6b124044f7bce1cd7cc583a47cff1a60e2ce773b16c1106ff6e9",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000313130",
+          "image_sha256": "3572b83c43004ac3616ffc05705971f62da2a35c4031efaae6ffe52d9bafa109",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000323709",
+          "image_sha256": "68544dbd27f85ab9c77489c2049c12e0642c9b1f8d82184acd18d461f07dbcea",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.25,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.5,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000324927",
+          "image_sha256": "edf6b96f614e60ef1284615ecf3063d9749932bcec400d88ff7a192321bac1e1",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000325114",
+          "image_sha256": "4242e8e18d2b706a9bb182d540d6f6e93df599740067584f25fa7accaf319cc4",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000327780",
+          "image_sha256": "5b492dc6808bf75c27b3c085784fa102e325acb43125475c1ae1babc83a61fd4",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000330818",
+          "image_sha256": "ec6b58d1ee8938d9efb4d231f13809de61f39caf8ce1479ccd32dec548869664",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000333772",
+          "image_sha256": "45abc24e5d525f4da47cafca857b5db9b08e8b4ee7fe03bcd3d6b2683ebfbcc7",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000338560",
+          "image_sha256": "1da51afa7fa72d73dd22181dd0e4ff98b206b54470f97ddf51a8339a3b503ef3",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000343453",
+          "image_sha256": "d5060feb2b7a4022a7b442f40f79168f92df0ca95880b5184b5934e8645eaac4",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000345469",
+          "image_sha256": "d75629108a0e46d3b1826862b5bae9a1b75ccc4c635411ec12167390c6f83f72",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000348708",
+          "image_sha256": "a0a54622b4ee5cf059b69a7346407013987fcbefa16fbd71d894f4e3817369d4",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000361571",
+          "image_sha256": "70c24ed87b242ecbd37270c660c0fd40aa82468aa5561b6fcec4a464d5c3b62d",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000361621",
+          "image_sha256": "27ef851c1525eda678fa34f7bff43ef5ff44fa50a9280f435b41aa0629db393f",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000363840",
+          "image_sha256": "231e12c229c2f84c186085b320a6a8dcaa3d4763bbd09940204121379a5b3e11",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000372819",
+          "image_sha256": "ba959429e80e0291609b81caa25e1a31abb24a3de0df6c7f1f68dd1649349d47",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000373382",
+          "image_sha256": "0370d61f193a4632a66703c9bb401c5d27161309cb6f682fe233ad5f4da3fe42",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000381639",
+          "image_sha256": "bc465a20b1eca9900919e9948da70ab4590d1436ac80763dbafa8bf9f12da630",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000386134",
+          "image_sha256": "676e88db32dd10e20e60f166df9e4b71a8574d6d552871938ddc8dfce736419f",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000391375",
+          "image_sha256": "668cc307e1066ceb163f2ef4aa44383c78bdaa5ddcceba3907a8dee0ce531a10",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000404922",
+          "image_sha256": "a3bc50bef06d19ccb06394209dad825778760a1dba4f6d4e9448f0789c5e49ff",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000405432",
+          "image_sha256": "330804d88d2720574205724ccebf107337edc6dc914784846b7a5c0e721507ec",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000412286",
+          "image_sha256": "2c482d365623b18f877b90eea879331d4d11f8c9f8b13f058aa8cb1ef31cb58d",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000412362",
+          "image_sha256": "f128deccbf3e1043c473351db3d0510e6ecc82329600e41938b31615f30bb4a1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.5,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000414340",
+          "image_sha256": "4434c715aa868745ed8d4506dfd812da5e0e6fdf0fba8250c7bded4cd15337b8",
+          "stratum": "n1|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000414638",
+          "image_sha256": "fa32398a8441c2a27f5047bc2ad2f9144127f10f2c6663b22f0701679e8e97c3",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000415741",
+          "image_sha256": "f3dc76875460b05e6d348a4867e3e44bad554f819f2e4cf25b9b66615d72302c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000418062",
+          "image_sha256": "6878c319a0fcf0cb9a1f24efa3129fefe01b07be2c655746cfa31516f4344c52",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000418959",
+          "image_sha256": "bfad3d45970d4c214235c197b047af6d7678ddd62d96908e66d38323d38311ab",
+          "stratum": "n1|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000418961",
+          "image_sha256": "6081d03d55c5a52e4cf944db4a33b85c5d10c4cde34a1bca134a3360720a78e2",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000430286",
+          "image_sha256": "d823325d523c74b0a270f1830fe4527ffa63e0518ad3062367ec1faebc35f665",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000437898",
+          "image_sha256": "80a69fe0b425618642c322b5d6144af30d6f93f79acb20f6f9585141d5fed90c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000446117",
+          "image_sha256": "5b16b401560afe3a56ed9cfd321290282fd27ddcfb2f97d65b675a0b83307b32",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000451308",
+          "image_sha256": "30b926d42836c2c3d378d574f9cda17790829d828639bfa23ed036a074bdbca3",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000455624",
+          "image_sha256": "b896f9d8d31a98765a0e15dfec38f7f036ba71b2af8330b4f7a600fb5294aa98",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000478862",
+          "image_sha256": "78d97eb62d51e45b115154d82a6e56bf5dcfe4f967c74277f20df5e1532c0fba",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000481573",
+          "image_sha256": "4e84dea6549eb1c36daa3e7fa6a454eab6fb5910318c2e9ac1482034fa4ea918",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000485071",
+          "image_sha256": "af8147288606162fbc52e97e5aa6fe6a05ccf3536203c40495f4f7394501fc80",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000485844",
+          "image_sha256": "80194252851d86f6dd9bbe3f2b9bdd72db00f6b7a590287ac30c490af6fc16ac",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000486573",
+          "image_sha256": "5ef9eda85c70a1298ceb23d5c30c7a3592010e430cb558c09d1ae533069cec58",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000489305",
+          "image_sha256": "a4ff1f70919090ca5467d0588a87c5478571399be8f1bf4a6ed7ba3fc1a21295",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000492992",
+          "image_sha256": "bcfcd4c5d5bfe054720bb8a979fe099a2b04fd42b9cc44d00a2691c3a184465f",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000504415",
+          "image_sha256": "74411e93658f68edd930e9e665a8cfabb542425dd63016303e7e23f4f895aaca",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000507975",
+          "image_sha256": "e4812f760f300f88e0bd1ef60782949a51c64631728e21b53531ae7e0f8cf62b",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000523033",
+          "image_sha256": "a73411a8b5f8062de74855c0ae6a9a8c9477e35d2db43e333f8ff6d48e3bba4d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000537270",
+          "image_sha256": "82072a4304dd9f8cd22887e60c0b1b910d75175a74ba504e5de82e370f94d0ca",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000546976",
+          "image_sha256": "f1ac304d998ecafa9a23ad334d869744e3f1b8ac3ea1c12596a4bde4a146a00e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000554002",
+          "image_sha256": "a53dd6f623305a2a60828d28fbd90ccdf2998539a71e4301267641963e56213c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000556158",
+          "image_sha256": "1e67bbb26205214fd8e29e4809513dd6b5454ad5ebf3800f2f08251538ee9ade",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000563603",
+          "image_sha256": "aae0af2b3d1afdab4156e57b046144a836b366187efd81f74b8990362f6b85b1",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000567011",
+          "image_sha256": "f52ff0a96efaf136300ad289e5e7a4c944596fe16f4276bb5c41ffbe0a6b657d",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000573258",
+          "image_sha256": "b4967a776006cf57294797e4906aa180194aeda50233d95513d17b13cc0b9f71",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000576955",
+          "image_sha256": "3446d0b6db7f0b012c21ac8d2c76963f314fb34fa2247b0eb2166a016793ba9f",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000577584",
+          "image_sha256": "9e47eaaf563d2ae9bfebcea80f2616ceb7eaf6c99a0390f0274cfb0068686d77",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        }
+      ]
+    },
+    "dino_r50_4s_12e": {
+      "rows": [
+        {
+          "image_id": "000000008277",
+          "image_sha256": "692fc5469af5fffdc0dac05e709a0ac1380dca32d4c57436903b122f3c3558dc",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000010977",
+          "image_sha256": "fba520c270003f70a09bdbb9ab8ca856a4a6cde110c64f05879e96b755ca7af6",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000015660",
+          "image_sha256": "d908b9557857567ac19501f12f6c090ba3568d11421a2fe6296133a27e48a991",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000023126",
+          "image_sha256": "65917720776abafb2706e037fda7a9d90eb17b659bfa49ac20d19b06abff2e9e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000026926",
+          "image_sha256": "7126855b6fe8548a6b9da18d8424f803c0eeb37deb3f5764f95f4d60d1915b37",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000031118",
+          "image_sha256": "2cdfc92ff0193efb0a93f9021841308f1cb204d1ac4810d00aa32a515ef033f7",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000046872",
+          "image_sha256": "fd991bcccf8342f3ab5c5228dce3873765964a545365ac3f31d69b32c8a9258d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000051610",
+          "image_sha256": "c4b6fdea9764b29e9ef8015c0bf6c1bb45c396f17fa0a425cafa9f2c32a025e6",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000053529",
+          "image_sha256": "560b4e0fc5844448f15891aa241443abc17b670698b3c56c4ae17db37a8cfdbc",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000057672",
+          "image_sha256": "7f497377f9ad39d7b90752d4faf5cd7605329652d511f5009430d39231512334",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000060102",
+          "image_sha256": "49d1bff2f0dacffc712afc003fe3d2b8705881e5d5e241ec02d37e431d49d01c",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000064868",
+          "image_sha256": "b3cde4030154cacc17d93aa0a01344ec749f96faab680016e0f680458410cb52",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000065350",
+          "image_sha256": "963a129714e3675b99b6a405a2cb46eca5678241358bb6b6bbefc3c3f1943ae0",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000066038",
+          "image_sha256": "6ffd3baefa47644f7bf33604d7c1be20c6012950ecbc5dc328d2be9d5833db12",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000069213",
+          "image_sha256": "c219b7e4409b0dcaab0ec1932372f7f91bfc72abb999a3ed92405c1089eb0b0f",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000071711",
+          "image_sha256": "fccd841030f6c5fb2e8acc23bf1105d077f6715d1219010a7ee061ba32917858",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000074733",
+          "image_sha256": "d99c93fb6d22a5d51bbb6e09ca5f10c11bdcf90a711abf6cc83188df52cc456a",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000078915",
+          "image_sha256": "800d4feb64141487b944c3ccd32554a2dc4095589b8cb4d617066a9d0e7c6c43",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000084664",
+          "image_sha256": "f936a16148ba0460b3b89cb4f4aa3866f3079210b7e641abd0b016ddcd3e51e7",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000086483",
+          "image_sha256": "ab17c10220fca3e893e48673b0eacaf9d206999ab17279560c982d16fb8798a9",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000088951",
+          "image_sha256": "2abcdbf48031a2d126452f1b383195a8a25189fa2620d085e35f6184ce73ed0b",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000090155",
+          "image_sha256": "5dce15f7160f3efd68efacab3932a634602533f30e0345967e890f883b8e5604",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000104782",
+          "image_sha256": "667a8bd3ea18c796687c73738455fdf1ab374a32576d3b0bf37ba71760902e4f",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000109798",
+          "image_sha256": "8fafbfb6d1c320f9efc59291748c0b9a730726db311364c03280b2de39fe656f",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000109992",
+          "image_sha256": "4aafa6196c1802e0eb2e2c39df41ab9f4b69c449c254a9663578b8a7b79c9444",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000118921",
+          "image_sha256": "321f2374beb5e907f2bc2e7eb8ba1fa5fc311f922a9d4dab86230dcc37beb0b4",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000129113",
+          "image_sha256": "7afcf3b9fe07b838a808faf6cf1ba83e1527ad4e63fa79173f8a339bc3114d0d",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000133233",
+          "image_sha256": "7f4aaf803281ebe5ddecd6bbb969cc626b65bf893cd2198d05ec7b5a562aa0d1",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000135890",
+          "image_sha256": "7c3b5e6755b58d55585200d2cf15fd46d0119dcb4b507d35df34f4da914f8d03",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000136600",
+          "image_sha256": "d60884afbf97caa7f0a3a6ae37eb8b25ae61be3abffc25192622980f177afcc1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000136715",
+          "image_sha256": "cde59a511126e505df5b80635e71768e26874382a1bad191f5e26ad820597701",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000138550",
+          "image_sha256": "819557b8df3fbbf27358a66aa87adaa5a4908ad95b418f50d1026b43bf9ff0a7",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000139099",
+          "image_sha256": "ab9c7a09369b381043f90e6008307610d63cd9cbe3803ba1af6b1998b361fe51",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000143931",
+          "image_sha256": "45cf81830e1b95dc25a9be1ebdf2798238b9bda4dc3e34e589442c5c9ad98aad",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000155179",
+          "image_sha256": "df0a53913e3fb3e4decf13aecb762fe0abe287f353d79af26eb63b13002f3852",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000158548",
+          "image_sha256": "8b8662687f8a639949f622da9ccec56bff0e0569b4eb498aa77f0520a19605b1",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000163640",
+          "image_sha256": "e9bcd6d4d276493efdb6fc3ac4bcf3e8b40318f896a68d84981adca606a51bba",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000164885",
+          "image_sha256": "ed7d5c90e44189de91ba723744485059c9b54c26b3ca4ab3842d53ca489d50a1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000164969",
+          "image_sha256": "6f8cebaacfbcfcf955dc01896b6fc095faa79914ea7f0cf36ad96ec6c4a8690c",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000166287",
+          "image_sha256": "8c1e01146df6e51a43b12bedd7913834d5ed8f91031924a964e915a74cc9f72d",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000170116",
+          "image_sha256": "329e023a2f40925b9f28021f9daf9407d568b01edf5fd0b77ac772e27e2553c4",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000172595",
+          "image_sha256": "faa06206531e26d29bed2d1ecca535d5496a017e1e88a7329f19bf4a5574a83b",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000177935",
+          "image_sha256": "4e1e6de983ed9e03519ed8af56493934b3c633acd3e19c461aa009f699c41855",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000179642",
+          "image_sha256": "3ca6f60e050dce9f1cfcbb68052cfdc0ea877fb99529beafa6779c0fa719df17",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000185473",
+          "image_sha256": "ccf9002db2e904761e86212f5b3d9155cb3c7a6a5f3c020ce07ff70fe4a03e7e",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000186938",
+          "image_sha256": "291ff31f43eccd746a0f2c13b7b38b5ff59579db14f8229105bf57eff7da9850",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000188592",
+          "image_sha256": "d91e1e7121a0f877856108f6244212ef0b34cfcbea0b6563f22a0f618eeafc27",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000189213",
+          "image_sha256": "7c2e5f491b5135098b40bd7b9c545ea8f06f738d863435d984882314adbd4c9e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000192607",
+          "image_sha256": "df1cfbabe293d62e1ad29ebf0e79699de8c1cef2a09177c5192255846a756974",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000205282",
+          "image_sha256": "82b35c37e5b52aae04650677503465b729785943dc7ab2a9eb4b545f66864625",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000206027",
+          "image_sha256": "2d02a9fe14338778b9b755b92da237f6972e070cc4b1b0f9c0ce4e6923b2a855",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000207728",
+          "image_sha256": "86e23bad1cc503b9c903fab062701c9c2676fc66c8e4146770323fd7284f7fe8",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000219283",
+          "image_sha256": "cb81061ef4871012541702ab329af7b8dc84177848c6bcd59cd7e5dd6b489cb8",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000227898",
+          "image_sha256": "6169122c7fd64b036eb85598a7f1085a4f25c7ffb57f0e1ac61e0e2ea52196d0",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000231580",
+          "image_sha256": "f4c3efedc90249f7671736c8a1eb3446ff13446a7160ab8e3965ff16c760dd7c",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000241319",
+          "image_sha256": "86e9949e3dbaa94b1543f585375f1d8ef1b05aa8411fca298bc4c13e53d29c1d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000243989",
+          "image_sha256": "36a40ad058e7e4ad2ceca9445cc88feca3b9fbea53d727953dbfce1602f97aeb",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000248111",
+          "image_sha256": "cb5ac7d777b00669aea16772fa45f1015baf4b06d1b887e76fa6557bac2cb429",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000248631",
+          "image_sha256": "45ea37728704ce7d5a62ff39c68ab4a1d149cdd743414c0a5455524ea337150a",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000258541",
+          "image_sha256": "b8f193ba56ea637626ac4f754f8c5d7192660fadab754c59e368048d212be01d",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000263299",
+          "image_sha256": "62e5029b36c901539d8733037a5340ae2ef85ee287094ac784b28e9463b9d502",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000264968",
+          "image_sha256": "ee603e1220d1b99de201a8abfa271774be252a270033df835eef73640c9d0703",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000271402",
+          "image_sha256": "b13b6ba1b399210e9cfd2aa3f14e7a4c209e543ee33cdca18d482bef4ff8dab4",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000272364",
+          "image_sha256": "a412c21283703aa8822175e319638957a0fbb1e0c909d302a5c27a6188b94989",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000274687",
+          "image_sha256": "ebc13d2019005f8d7009f72f33e0e861d5e98837ca4c1d56958636d58dd8ba2b",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000286708",
+          "image_sha256": "a7b888fd1076cc9816e78e96ecb94e7a346e740d578af0dcbc037319944c1bc3",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000290771",
+          "image_sha256": "7d7f83ad4594d4ccf7b2c10ffcfe063cd84cbda30713368b594ae31aa4992b6d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000291664",
+          "image_sha256": "f8570147f5857eb91dcafb0f6e14caa06ad9db8541d99768e18cdae1b9a7c6cd",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000292330",
+          "image_sha256": "69b3cc092cd58a3a62415a760fa09dc38cf576443d99464d17d5c42118843851",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000296657",
+          "image_sha256": "ac48b0d2c8a9dd00737b3ad1aadc59e96f2721a6d64719b881a6f6acdb46d3c8",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000301718",
+          "image_sha256": "54a5a90b270b5ae95672c8ed2947867efabe7acf977d89c985cd1e909a58b1be",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000304812",
+          "image_sha256": "21e69b93c9ea6a7c3352331969ee8ee6bf8025bc2dc09cfbec67c32cdc48938a",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000310200",
+          "image_sha256": "3f9b03989d2abed1869013389aa8ac9885b7fd8ceedd01bd5bc89b8dddd69738",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000312278",
+          "image_sha256": "60d58df335eb6b124044f7bce1cd7cc583a47cff1a60e2ce773b16c1106ff6e9",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000313130",
+          "image_sha256": "3572b83c43004ac3616ffc05705971f62da2a35c4031efaae6ffe52d9bafa109",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000323709",
+          "image_sha256": "68544dbd27f85ab9c77489c2049c12e0642c9b1f8d82184acd18d461f07dbcea",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000324927",
+          "image_sha256": "edf6b96f614e60ef1284615ecf3063d9749932bcec400d88ff7a192321bac1e1",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000325114",
+          "image_sha256": "4242e8e18d2b706a9bb182d540d6f6e93df599740067584f25fa7accaf319cc4",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000327780",
+          "image_sha256": "5b492dc6808bf75c27b3c085784fa102e325acb43125475c1ae1babc83a61fd4",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000330818",
+          "image_sha256": "ec6b58d1ee8938d9efb4d231f13809de61f39caf8ce1479ccd32dec548869664",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000333772",
+          "image_sha256": "45abc24e5d525f4da47cafca857b5db9b08e8b4ee7fe03bcd3d6b2683ebfbcc7",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000338560",
+          "image_sha256": "1da51afa7fa72d73dd22181dd0e4ff98b206b54470f97ddf51a8339a3b503ef3",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000343453",
+          "image_sha256": "d5060feb2b7a4022a7b442f40f79168f92df0ca95880b5184b5934e8645eaac4",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000345469",
+          "image_sha256": "d75629108a0e46d3b1826862b5bae9a1b75ccc4c635411ec12167390c6f83f72",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000348708",
+          "image_sha256": "a0a54622b4ee5cf059b69a7346407013987fcbefa16fbd71d894f4e3817369d4",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000357978",
+          "image_sha256": "c391980744da1a5364eae79358f00c68be4b0429dca5980162d1adbd5d440d34",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000361571",
+          "image_sha256": "70c24ed87b242ecbd37270c660c0fd40aa82468aa5561b6fcec4a464d5c3b62d",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000361621",
+          "image_sha256": "27ef851c1525eda678fa34f7bff43ef5ff44fa50a9280f435b41aa0629db393f",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000363840",
+          "image_sha256": "231e12c229c2f84c186085b320a6a8dcaa3d4763bbd09940204121379a5b3e11",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000372819",
+          "image_sha256": "ba959429e80e0291609b81caa25e1a31abb24a3de0df6c7f1f68dd1649349d47",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000373382",
+          "image_sha256": "0370d61f193a4632a66703c9bb401c5d27161309cb6f682fe233ad5f4da3fe42",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000381639",
+          "image_sha256": "bc465a20b1eca9900919e9948da70ab4590d1436ac80763dbafa8bf9f12da630",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000386134",
+          "image_sha256": "676e88db32dd10e20e60f166df9e4b71a8574d6d552871938ddc8dfce736419f",
+          "stratum": "n1|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000391375",
+          "image_sha256": "668cc307e1066ceb163f2ef4aa44383c78bdaa5ddcceba3907a8dee0ce531a10",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000404922",
+          "image_sha256": "a3bc50bef06d19ccb06394209dad825778760a1dba4f6d4e9448f0789c5e49ff",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000405432",
+          "image_sha256": "330804d88d2720574205724ccebf107337edc6dc914784846b7a5c0e721507ec",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000412286",
+          "image_sha256": "2c482d365623b18f877b90eea879331d4d11f8c9f8b13f058aa8cb1ef31cb58d",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000412362",
+          "image_sha256": "f128deccbf3e1043c473351db3d0510e6ecc82329600e41938b31615f30bb4a1",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000414340",
+          "image_sha256": "4434c715aa868745ed8d4506dfd812da5e0e6fdf0fba8250c7bded4cd15337b8",
+          "stratum": "n1|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000414638",
+          "image_sha256": "fa32398a8441c2a27f5047bc2ad2f9144127f10f2c6663b22f0701679e8e97c3",
+          "stratum": "n5plus|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000415741",
+          "image_sha256": "f3dc76875460b05e6d348a4867e3e44bad554f819f2e4cf25b9b66615d72302c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000418062",
+          "image_sha256": "6878c319a0fcf0cb9a1f24efa3129fefe01b07be2c655746cfa31516f4344c52",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000418959",
+          "image_sha256": "bfad3d45970d4c214235c197b047af6d7678ddd62d96908e66d38323d38311ab",
+          "stratum": "n1|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000418961",
+          "image_sha256": "6081d03d55c5a52e4cf944db4a33b85c5d10c4cde34a1bca134a3360720a78e2",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000430286",
+          "image_sha256": "d823325d523c74b0a270f1830fe4527ffa63e0518ad3062367ec1faebc35f665",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000437898",
+          "image_sha256": "80a69fe0b425618642c322b5d6144af30d6f93f79acb20f6f9585141d5fed90c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000446117",
+          "image_sha256": "5b16b401560afe3a56ed9cfd321290282fd27ddcfb2f97d65b675a0b83307b32",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000451308",
+          "image_sha256": "30b926d42836c2c3d378d574f9cda17790829d828639bfa23ed036a074bdbca3",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000455624",
+          "image_sha256": "b896f9d8d31a98765a0e15dfec38f7f036ba71b2af8330b4f7a600fb5294aa98",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000478862",
+          "image_sha256": "78d97eb62d51e45b115154d82a6e56bf5dcfe4f967c74277f20df5e1532c0fba",
+          "stratum": "n5plus|crowd|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000481573",
+          "image_sha256": "4e84dea6549eb1c36daa3e7fa6a454eab6fb5910318c2e9ac1482034fa4ea918",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000485071",
+          "image_sha256": "af8147288606162fbc52e97e5aa6fe6a05ccf3536203c40495f4f7394501fc80",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000485844",
+          "image_sha256": "80194252851d86f6dd9bbe3f2b9bdd72db00f6b7a590287ac30c490af6fc16ac",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000486573",
+          "image_sha256": "5ef9eda85c70a1298ceb23d5c30c7a3592010e430cb558c09d1ae533069cec58",
+          "stratum": "n1|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000489305",
+          "image_sha256": "a4ff1f70919090ca5467d0588a87c5478571399be8f1bf4a6ed7ba3fc1a21295",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000492992",
+          "image_sha256": "bcfcd4c5d5bfe054720bb8a979fe099a2b04fd42b9cc44d00a2691c3a184465f",
+          "stratum": "n2_4|ordinary|large",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000504415",
+          "image_sha256": "74411e93658f68edd930e9e665a8cfabb542425dd63016303e7e23f4f895aaca",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000507975",
+          "image_sha256": "e4812f760f300f88e0bd1ef60782949a51c64631728e21b53531ae7e0f8cf62b",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000523033",
+          "image_sha256": "a73411a8b5f8062de74855c0ae6a9a8c9477e35d2db43e333f8ff6d48e3bba4d",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000537270",
+          "image_sha256": "82072a4304dd9f8cd22887e60c0b1b910d75175a74ba504e5de82e370f94d0ca",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000546976",
+          "image_sha256": "f1ac304d998ecafa9a23ad334d869744e3f1b8ac3ea1c12596a4bde4a146a00e",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000554002",
+          "image_sha256": "a53dd6f623305a2a60828d28fbd90ccdf2998539a71e4301267641963e56213c",
+          "stratum": "n5plus|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000556158",
+          "image_sha256": "1e67bbb26205214fd8e29e4809513dd6b5454ad5ebf3800f2f08251538ee9ade",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.75,
+            "B_for_M_0.25": 0.5,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.75,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000563603",
+          "image_sha256": "aae0af2b3d1afdab4156e57b046144a836b366187efd81f74b8990362f6b85b1",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.25,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000567011",
+          "image_sha256": "f52ff0a96efaf136300ad289e5e7a4c944596fe16f4276bb5c41ffbe0a6b657d",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000573258",
+          "image_sha256": "b4967a776006cf57294797e4906aa180194aeda50233d95513d17b13cc0b9f71",
+          "stratum": "n2_4|ordinary|small",
+          "selected_doses": {
+            "A_for_M_0.25": 0.25,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.5,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        },
+        {
+          "image_id": "000000576955",
+          "image_sha256": "3446d0b6db7f0b012c21ac8d2c76963f314fb34fa2247b0eb2166a016793ba9f",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.75
+          }
+        },
+        {
+          "image_id": "000000577584",
+          "image_sha256": "9e47eaaf563d2ae9bfebcea80f2616ceb7eaf6c99a0390f0274cfb0068686d77",
+          "stratum": "n2_4|ordinary|medium",
+          "selected_doses": {
+            "A_for_M_0.25": 0.5,
+            "B_for_M_0.25": 0.25,
+            "A_for_M_0.5": 0.75,
+            "B_for_M_0.5": 0.5,
+            "A_for_M_0.75": 0.75,
+            "B_for_M_0.75": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "scientific_outcome_used": false,
+  "V_F_read": false
+}
