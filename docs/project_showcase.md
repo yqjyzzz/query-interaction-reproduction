@@ -40,5 +40,5 @@ python -m pytest -q
 
 ## 一段简短介绍
 
-> 这是一个 CPU-only 的 TMLR 论文复现仓库。它从冻结的逐图像分析表重新计算 H4-D、Gate C、T1、T2 四组 aggregate，用 SHA-256 manifest 和 pytest 检查输入与结果的一致性，不依赖模型推理。
+> 这是关联论文的 CPU-only 聚合复现仓库。它从冻结的逐图像分析表重新计算 H4-D、Gate C、T1、T2 四组 aggregate，用 SHA-256 manifest 和 pytest 检查输入与结果的一致性，不依赖模型推理，也不声明 TMLR 接收状态。
 

@@ -1,61 +1,60 @@
-# Query-Interaction Intervention Audit
+# Local Gains and Fixed-Assignment Set Losses in Shared Set Decoders
 
-**查询交互干预审计与独立视觉检测实现**
+**DETR/DINO 查询关系干预、匹配感知读出与精确聚合复现**
 
-本仓库围绕集合预测模型中的查询交互展开。论文部分从冻结的分析就绪数据重算全部聚合结果，并通过摘要校验与自动化测试防止数字漂移；独立视觉检测部分提供数据读取、模型接入、批量推理、结果评估和可视化的完整接口。两部分在目录、输出和科学结论上严格隔离。
+A local query gain need not imply an improvement of the jointly decoded prediction set. This repository accompanies a study of directed query-relation deletion in shared set decoders and provides an analysis-ready package for exact aggregate reproduction.
 
-## 研究问题
+## 60 秒概览
 
-DETR、DINO 等集合预测模型通过一组查询共同生成预测。删除查询之间的关系后，被干预查询的局部读出可能改善，但按原始分配关系评估的预测集合反而可能下降。论文因此不把单个局部指标当作整体性能的替代，而是同时检查局部、固定分配、重新匹配、选择条件和原生读出等不同估计目标。
+- **研究问题**：删除一条查询关系后，局部槽位变好，是否意味着包含它的预测集合也变好？
+- **干预设计**：在两个 ResNet-50 DETR-family checkpoints 中，对选中的定向查询关系执行硬删除，并与“删除同一 leader source、但作用于另一 recorded recipient”的匹配主动对照比较。
+- **多阶段读出**：分别检查局部槽位、固定分配集合、匈牙利重匹配和原生输出，避免用单个局部指标替代集合行为。
+- **公开范围**：仓库公开逐图像分析表、配置、审计记录、预期聚合结果和 CPU-only 复算代码；不公开图像像素、模型权重，也不声称能够重新执行端到端模型干预。
 
-冻结证据覆盖两个模型检查点。下表给出论文中的一个核心观察：
+![Directed intervention and matching-aware readouts](docs/assets/readout_overview.png)
 
-| 模型 | 局部读出与固定分配读出方向相反 | 重新匹配后仍方向相反 |
+## 核心结果
+
+每个 checkpoint 包含 710 个配对的图像—关系单元：
+
+| 模型 | 局部增益且固定分配集合损失 | 局部增益且重匹配后仍为损失 |
 |---|---:|---:|
-| DETR | 302 / 710 | 285 / 710 |
-| DINO | 460 / 710 | 433 / 710 |
+| DETR-R50-500 | 302 / 710 | 285 / 710 |
+| DINO-R50-4scale-12epoch | 460 / 710 | 433 / 710 |
 
-这些数字来自归档证据，不由独立视觉检测代码生成。
+目标删除减匹配主动对照的均值在两个 checkpoint 中均呈现“局部为正、固定分配集合为负”。重匹配和原生选择吸收了足够的 DETR 平均损失，使区间跨越零；DINO 的区间仍保持为负。因此，现有证据支持的是**选择条件依赖、读出方式依赖和干预算子依赖的删除敏感性**，而不是干预不变的有害边机制、检测器整体退化或训练正则化收益。
 
-## 仓库设计
+## 这个仓库实际复现什么
 
-| 轨道 | 输入 | 主要输出 | 用途 |
-|---|---|---|---|
-| 论文复现 | 冻结的分析就绪数据 | 四组聚合结果、校验回执 | 验证论文数字与估计目标未发生漂移 |
-| 视觉检测 | 本地图像、COCO 标注、用户提供的 checkpoint | 预测、检测指标、可视化、运行记录 | 验证独立的端到端检测工程流程 |
+论文复现轨道从冻结的 `artifact/analysis_ready/` 开始，重算 H4-D、Gate C、T1 和 T2 四组聚合结果，并在 `1e-12` 容差内与冻结结果逐字段比较：
 
-```mermaid
-flowchart LR
-    A["冻结分析数据"] --> B["论文聚合程序"]
-    B --> C["结果精确比对"]
-    C --> D["复现回执"]
+| 组件 | 作用 |
+|---|---|
+| H4-D | 检查发现样本中的主要删除响应 |
+| Gate C | 检查记录中的算子迁移联合条件 |
+| T1 | 定位差异首先出现在哪个读出阶段 |
+| T2 | 在确认样本中执行配对分类并检查强阳性对照 |
 
-    E["本地图像与标注"] --> F["DETR / DINO 适配层"]
-    F --> G["批量推理"]
-    G --> H["指标、可视化与运行记录"]
-
-    D -. "科学边界隔离" .- H
-```
-
-冻结证据位于 `artifact/`。视觉检测轨道只向单独的运行目录写入结果，不能修改 `artifact/analysis_ready/` 或 `artifact/expected/`。
+这是一份**聚合结果复现包**，不是原始训练和模型推理环境。详细边界见[科学范围](docs/scientific_scope.md)和[数据与模型来源](docs/data_and_model_provenance.md)。
 
 ## 快速验证
 
-参考环境为 Python 3.12 和 NumPy 1.26.4。
+参考环境为 Python 3.12 和 NumPy 1.26.4。验证只使用 CPU，不需要图像、权重、GPU 或网络访问。
 
 ```powershell
+python -m venv .venv
 python -m pip install -e ".[test]"
 python scripts/check_repository.py
 ```
 
-完整检查包括：
+完整检查会：
 
-1. 校验 62 个冻结文件的大小和 SHA-256；
-2. 从分析就绪数据重新计算 H4-D、Gate C、T1 和 T2；
-3. 以 `1e-12` 容差比较新结果与冻结结果；
-4. 执行论文复现与视觉检测两组单元测试。
+1. 校验冻结工件的大小和 SHA-256；
+2. 从分析就绪数据重新计算四组聚合结果；
+3. 将新结果与冻结结果精确比较；
+4. 执行复现合同和辅助视觉代码的自动化测试。
 
-成功时最后输出：
+成功时输出：
 
 ```text
 PASS_ARTIFACT_MANIFEST
@@ -63,88 +62,7 @@ PASS_ANALYSIS_READY_EXACT_REPRODUCTION
 PASS_REPOSITORY_CHECK
 ```
 
-复现过程仅使用 CPU，不需要图像像素、模型权重、GPU 或网络访问。新生成的聚合结果保存在 `results/reproduced/`。
-
-## 论文分析结构
-
-论文将同一个问题拆成四个职责清晰的分析组件：
-
-| 组件 | 分析目的 | 输出 |
-|---|---|---|
-| H4-D | 检查发现人群上的删除敏感性 | 分层自助法估计及区间 |
-| Gate C | 检查预先记录的算子迁移联合条件 | 分剂量结果与联合判定 |
-| T1 | 定位差异首先出现在哪个读出阶段 | 配对图像的同时区间 |
-| T2 | 进行配对分类并检查强阳性对照 | 分类状态、区间与对照结果 |
-
-两个模型始终分别分析，代码不会生成新的模型合并结果。更详细的实验映射见 [`docs/experiment_map.md`](docs/experiment_map.md)，结果解释见 [`docs/results_guide.md`](docs/results_guide.md)。
-
-## 独立视觉检测轨道
-
-`cv_demo/` 提供与特定第三方实现解耦的检测流程：
-
-- 读取 COCO 格式的图像元数据、标注框和类别；
-- 通过模型构建函数显式加载用户提供的 checkpoint；
-- 统一接入 DETR 风格与 DINO 风格的模型输出；
-- 支持模型类别编号到数据集类别编号的显式映射；
-- 支持 CPU、CUDA、批量推理和固定随机种子；
-- 生成逐图像预测、COCO 结果文件和检测框可视化；
-- 执行类别感知的 IoU 匹配，并汇总精确率、召回率、TP、FP、FN；
-- 记录配置、输入摘要、设备、随机种子和输出清单。
-
-安装可选依赖：
-
-```powershell
-python -m pip install -e ".[demo]"
-```
-
-准备本地图像、COCO 标注、checkpoint 和模型构建函数后运行：
-
-```powershell
-python -m cv_demo.inference.predict `
-  --config cv_demo/configs/demo.json `
-  --builder my_backend.builders:build_demo_model
-```
-
-如果使用本地 Hugging Face DETR 目录，可直接使用仓库提供的构建函数：
-
-```powershell
-python -m pip install -e ".[huggingface]"
-python -m cv_demo.inference.predict `
-  --config cv_demo/configs/demo.json `
-  --builder cv_demo.models.builders.huggingface_detr:build_local_model
-```
-
-该构建函数设置为仅读取本地文件，不会自动联网下载模型。
-
-一次运行会生成：
-
-| 文件 | 内容 |
-|---|---|
-| `predictions.json` | 统一内部格式的逐图像预测 |
-| `coco_predictions.json` | 可交给 COCO API 的检测结果 |
-| `metrics.json` | 固定 IoU 阈值下的类别感知评估 |
-| `run_record.json` | 输入摘要、配置、设备、随机种子与输出清单 |
-| `visualizations/` | 带预测框和置信度的图像 |
-
-运行记录只保存文件名、大小和 SHA-256，不保存本机绝对路径。模型接入契约与配置说明见 [`cv_demo/README.md`](cv_demo/README.md)。
-
-## 质量控制
-
-- 冻结工件清单对每个文件执行 SHA-256 校验；
-- 论文结果由保留的原始聚合程序重算，避免另写一套实现造成分叉；
-- 测试覆盖证据防火墙、精确复现、COCO 数据读取、类别感知匹配、标准结果导出、可视化和运行记录；
-- 仓库检查脚本可在干净环境中执行同一套检查；
-- 生成目录、缓存和本地权重不进入版本控制。
-
-## 科学结论边界
-
-论文证据支持的是：在记录中的人群、干预和估计目标下，删除敏感性依赖于选择条件、算子和读出方式。
-
-现有证据不支持把结果扩大为通用的有害查询边、干预不变机制、检测器整体退化、总体发生率、已校准的算子迁移或训练正则化结论。
-
-H4-D 中的原生读出是分解分析下的派生摘要；T0 统一估计目标审计中的原生端点具有不同定义和用途。两者不合并、不替代，也不跨表比较。
-
-## 目录说明
+## 目录结构
 
 | 路径 | 内容 |
 |---|---|
@@ -152,14 +70,26 @@ H4-D 中的原生读出是分解分析下的派生摘要；T0 统一估计目标
 | `artifact/code/` | 保留的聚合与清单校验程序 |
 | `artifact/audit/` | 人群、配对、映射、剂量和完整性记录 |
 | `artifact/expected/` | 冻结的预期聚合结果 |
-| `scripts/` | 论文复现与仓库总检查入口 |
-| `tests/` | 论文复现测试 |
-| `cv_demo/` | 独立视觉检测实现及测试 |
+| `scripts/` | 清单验证、聚合复算和仓库总检查入口 |
+| `tests/` | 证据防火墙与精确复现测试 |
 | `docs/` | 研究设计、结果解释、架构和维护说明 |
+| `cv_demo/` | 与论文证据隔离的辅助目标检测工程示例 |
 
-## 引用与许可
+## 辅助视觉检测示例
 
-论文引用信息见 [`CITATION.cff`](CITATION.cff)。原创源代码采用 MIT License，适用范围见根目录 [`LICENSE`](LICENSE)。
+`cv_demo/` 提供 COCO 数据读取、DETR/DINO 输出适配、批量推理、类别感知评估、COCO 结果导出和可视化。它用于展示独立的视觉工程接口，**不生成、替换或扩展论文结果**。模型接入方式见 [`cv_demo/README.md`](cv_demo/README.md)。
 
-论文正文、图表、实验归档、数据、模型权重和第三方组件不自动包含在该许可中，
-其使用须遵守相应的版权和许可证条款。
+## 论文状态与引用
+
+关联论文为 **Local Gains and Fixed-Assignment Set Losses in Shared Set Decoders**。论文已于 2026-08-12 提交 arXiv，目前处于 **on hold** 状态，尚无公开永久标识符；本仓库不声明 TMLR 接收状态。
+
+软件引用信息见 [`CITATION.cff`](CITATION.cff)。原创代码采用 MIT License；论文正文、图表、实验归档、数据、模型权重和第三方组件不自动包含在该许可中，详见 [`LICENSE_STATUS.md`](LICENSE_STATUS.md)。
+
+## 推荐阅读顺序
+
+1. [项目概览](docs/project_overview.md)
+2. [实验映射](docs/experiment_map.md)
+3. [结果解释](docs/results_guide.md)
+4. [科学范围](docs/scientific_scope.md)
+5. [复现合同](docs/reproducibility_contract.md)
+6. [仓库架构](docs/architecture.md)
