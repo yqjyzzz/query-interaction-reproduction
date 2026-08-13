@@ -11,7 +11,7 @@ A local query gain need not imply an improvement of the jointly decoded predicti
 - **多阶段读出**：分别检查局部槽位、固定分配集合、匈牙利重匹配和原生输出，避免用单个局部指标替代集合行为。
 - **公开范围**：仓库公开逐图像分析表、配置、审计记录、预期聚合结果和 CPU-only 复算代码；不公开图像像素、模型权重，也不声称能够重新执行端到端模型干预。
 
-![Directed intervention and matching-aware readouts](docs/assets/readout_overview.png)
+![Directed intervention and matching-aware readouts](docs/assets/readout_overview_github.svg)
 
 ## 核心结果
 

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">One edit, four readouts</title>
+  <desc id="desc">A directed query-relation deletion can improve the local target slot while reducing fixed-assignment set utility. Rematching and native selection show checkpoint-dependent persistence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52606D"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#16324F" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .title { font-size: 48px; font-weight: 750; fill: #16324F; }
+      .subtitle { font-size: 25px; font-weight: 450; fill: #52606D; }
+      .section { font-size: 21px; font-weight: 750; letter-spacing: 0.4px; fill: #16324F; }
+      .card-title { font-size: 22px; font-weight: 700; fill: #16324F; }
+      .body { font-size: 20px; font-weight: 450; fill: #334E68; }
+      .small { font-size: 17px; font-weight: 500; fill: #52606D; }
+      .metric { font-size: 27px; font-weight: 800; }
+      .pill { font-size: 15px; font-weight: 750; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="760" fill="#FFFFFF"/>
+
+  <g class="sans">
+    <text x="52" y="58" class="title">One edit, four readouts</text>
+    <text x="52" y="91" class="subtitle">A local query gain can coexist with a fixed-assignment set loss.</text>
+
+    <!-- Directed intervention -->
+    <g filter="url(#shadow)">
+      <rect x="50" y="132" width="360" height="342" rx="20" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    </g>
+    <rect x="72" y="154" width="176" height="30" rx="15" fill="#E8EEF5"/>
+    <text x="88" y="175" class="pill" fill="#334E68">1 · DIRECTED INTERVENTION</text>
+
+    <rect x="82" y="232" width="120" height="84" rx="15" fill="#EAF4FB" stroke="#0072B2" stroke-width="2"/>
+    <text x="142" y="264" text-anchor="middle" class="small">Leader source</text>
+    <text x="142" y="294" text-anchor="middle" class="card-title">q<tspan baseline-shift="sub" font-size="13">ℓ</tspan></text>
+
+    <rect x="258" y="232" width="120" height="84" rx="15" fill="#FFF1E8" stroke="#D55E00" stroke-width="2"/>
+    <text x="318" y="264" text-anchor="middle" class="small">Recipient</text>
+    <text x="318" y="294" text-anchor="middle" class="card-title">q<tspan baseline-shift="sub" font-size="13">c</tspan></text>
+
+    <line x1="205" y1="274" x2="253" y2="274" stroke="#52606D" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="221" y1="256" x2="239" y2="292" stroke="#D55E00" stroke-width="5" stroke-linecap="round"/>
+    <line x1="239" y1="256" x2="221" y2="292" stroke="#D55E00" stroke-width="5" stroke-linecap="round"/>
+
+    <rect x="111" y="344" width="238" height="38" rx="19" fill="#FFF1E8"/>
+    <text x="230" y="369" text-anchor="middle" class="card-title" fill="#A33D00">hard deletion</text>
+    <text x="230" y="411" text-anchor="middle" class="body">decoder layer 3</text>
+    <text x="230" y="437" text-anchor="middle" class="small">selected query relation</text>
+
+    <!-- Matching-aware readouts -->
+    <g filter="url(#shadow)">
+      <rect x="438" y="132" width="1112" height="342" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    </g>
+    <rect x="460" y="154" width="210" height="30" rx="15" fill="#E8EEF5"/>
+    <text x="476" y="175" class="pill" fill="#334E68">2 · MATCHING-AWARE READOUTS</text>
+
+    <rect x="468" y="218" width="230" height="136" rx="16" fill="#EAF4FB" stroke="#0072B2" stroke-width="2"/>
+    <text x="583" y="250" text-anchor="middle" class="card-title">Local target slot</text>
+    <text x="583" y="292" text-anchor="middle" class="metric" fill="#0072B2">GAIN ↑</text>
+    <text x="583" y="325" text-anchor="middle" class="small">target − control &gt; 0</text>
+
+    <line x1="702" y1="286" x2="736" y2="286" stroke="#52606D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="218" width="230" height="136" rx="16" fill="#FFF1E8" stroke="#D55E00" stroke-width="2"/>
+    <text x="857" y="248" text-anchor="middle" class="card-title">Fixed assignment</text>
+    <text x="857" y="274" text-anchor="middle" class="small">prediction set</text>
+    <text x="857" y="310" text-anchor="middle" class="metric" fill="#D55E00">SET LOSS ↓</text>
+    <text x="857" y="335" text-anchor="middle" class="small">target − control &lt; 0</text>
+
+    <line x1="976" y1="286" x2="1010" y2="286" stroke="#52606D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="1016" y="218" width="230" height="136" rx="16" fill="#F3F6F9" stroke="#94A3B8" stroke-width="2"/>
+    <text x="1131" y="250" text-anchor="middle" class="card-title">After rematching</text>
+    <text x="1131" y="288" text-anchor="middle" class="body">DETR: crosses zero</text>
+    <text x="1131" y="318" text-anchor="middle" class="body">DINO: remains negative</text>
+
+    <line x1="1250" y1="286" x2="1284" y2="286" stroke="#52606D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="1290" y="218" width="230" height="136" rx="16" fill="#F3F6F9" stroke="#94A3B8" stroke-width="2"/>
+    <text x="1405" y="250" text-anchor="middle" class="card-title">Native output</text>
+    <text x="1405" y="290" text-anchor="middle" class="body">checkpoint-dependent</text>
+    <text x="1405" y="318" text-anchor="middle" class="body">recovery / persistence</text>
+
+    <rect x="468" y="386" width="1052" height="58" rx="14" fill="#F8FAFC" stroke="#D9E2EC"/>
+    <circle cx="498" cy="415" r="8" fill="#D55E00"/>
+    <text x="518" y="421" class="body">Within-unit local-positive / fixed-set-negative events:</text>
+    <text x="982" y="421" class="card-title" fill="#16324F">DETR 302 / 710</text>
+    <line x1="1150" y1="401" x2="1150" y2="429" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="1180" y="421" class="card-title" fill="#16324F">DINO 460 / 710</text>
+
+    <!-- Claim boundary -->
+    <g filter="url(#shadow)">
+      <rect x="50" y="510" width="920" height="202" rx="20" fill="#EDF6FC" stroke="#0072B2" stroke-width="2"/>
+      <rect x="998" y="510" width="552" height="202" rx="20" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+
+    <rect x="74" y="532" width="150" height="30" rx="15" fill="#0072B2"/>
+    <text x="149" y="553" text-anchor="middle" class="pill" fill="#FFFFFF">SUPPORTED</text>
+    <text x="78" y="598" class="body">● Local improvement does not summarize joint set behavior.</text>
+    <text x="78" y="638" class="body">● Matching and native selection can absorb part of the loss.</text>
+    <text x="78" y="678" class="body">● Persistence depends on checkpoint, readout, and operator.</text>
+
+    <rect x="1022" y="532" width="190" height="30" rx="15" fill="#52606D"/>
+    <text x="1117" y="553" text-anchor="middle" class="pill" fill="#FFFFFF">NOT ESTABLISHED</text>
+    <text x="1026" y="598" class="body">○ Universally harmful query relation</text>
+    <text x="1026" y="638" class="body">○ Detector-level degradation or AP loss</text>
+    <text x="1026" y="678" class="body">○ Benefit of a training-time regularizer</text>
+  </g>
+</svg>
